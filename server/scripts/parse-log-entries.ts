@@ -39,7 +39,12 @@ export function parseCoordinates(text: string): { latitude?: number; longitude?:
         const latDir = match[3].toUpperCase();
         const lonDeg = parseInt(match[4]);
         const lonMin = parseInt(match[5]);
-        const lonDir = match[6].toUpperCase();
+        let lonDir = match[6].toUpperCase();
+        
+        // Correctie: E moet W zijn (maak negatief)
+        if (lonDir === 'E') {
+          lonDir = 'W';
+        }
         
         const latitude = (latDeg + latMin / 60) * (latDir === 'S' ? -1 : 1);
         const longitude = (lonDeg + lonMin / 60) * (lonDir === 'W' ? -1 : 1);
@@ -50,7 +55,12 @@ export function parseCoordinates(text: string): { latitude?: number; longitude?:
         const lat = parseFloat(match[1]);
         const latDir = match[2].toUpperCase();
         const lon = parseFloat(match[3]);
-        const lonDir = match[4].toUpperCase();
+        let lonDir = match[4].toUpperCase();
+        
+        // Correctie: E moet W zijn (maak negatief)
+        if (lonDir === 'E') {
+          lonDir = 'W';
+        }
         
         const latitude = lat * (latDir === 'S' ? -1 : 1);
         const longitude = lon * (lonDir === 'W' ? -1 : 1);

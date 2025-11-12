@@ -10,7 +10,8 @@
     "extract-pdfs": "tsx scripts/extract-pdfs.ts",
     "extract-pdfs-ai": "tsx scripts/ai-extract-pdfs.ts",
     "import-data": "tsx scripts/import-data.ts",
-    "import-data-ai": "tsx scripts/ai-import-data.ts"
+    "import-data-ai": "tsx scripts/ai-import-data.ts",
+    "fix-coordinates": "tsx scripts/fix-coordinates.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",

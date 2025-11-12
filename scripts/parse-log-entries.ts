@@ -69,7 +69,12 @@ const parseCoordinates = (text: string) => {
   }
 
   const latDirection = (match.groups.latDirection ?? match.groups.latSign ?? "").toUpperCase();
-  const lonDirection = (match.groups.lonDirection ?? match.groups.lonSign ?? "").toUpperCase();
+  let lonDirection = (match.groups.lonDirection ?? match.groups.lonSign ?? "").toUpperCase();
+  
+  // Correctie: E moet W zijn (maak negatief)
+  if (lonDirection === "E") {
+    lonDirection = "W";
+  }
 
   const latitude = toDecimal(
     Number.parseFloat(match.groups.latDegrees ?? "0"),
