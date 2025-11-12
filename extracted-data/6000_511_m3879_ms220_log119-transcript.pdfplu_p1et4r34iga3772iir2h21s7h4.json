@@ -7,7 +7,7 @@
   "logEntries": [
     {
       "date": "1842-10-01",
-      "time": "11:00",
+      "time": null,
       "latitude": null,
       "longitude": null,
       "weather": "light breezes",
@@ -25,10 +25,10 @@
       "latitude": 40.45,
       "longitude": -70.117,
       "weather": "pleasant",
-      "course": "SE by S",
+      "course": "SE",
       "windDirection": "SSW",
       "temperature": null,
-      "notes": "Discharged the pilot, spoke the Ship Candace of New London.",
+      "notes": "Discharged the pilot. Montauk light bearing W by S, distant 6 miles at dark fifteen miles.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -84,7 +84,7 @@
       "course": "SE by S",
       "windDirection": "NNW",
       "temperature": null,
-      "notes": "Fresh gales, no observations.",
+      "notes": "All this day fresh gales.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -98,7 +98,7 @@
       "course": "SE by E",
       "windDirection": "NNW",
       "temperature": null,
-      "notes": "One sail in sight.",
+      "notes": "All this day fresh gales under all sail, one sail in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -108,11 +108,11 @@
       "time": null,
       "latitude": 32.167,
       "longitude": -53.4,
-      "weather": "strong gales",
+      "weather": null,
       "course": "SE by E",
       "windDirection": "NNW",
       "temperature": null,
-      "notes": "Under single reefed topsails.",
+      "notes": "All this day strong gales under single reefed topsails.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -250,9 +250,9 @@
       "longitude": null,
       "weather": "light breezes",
       "course": null,
-      "windDirection": "S",
+      "windDirection": null,
       "temperature": null,
-      "notes": null,
+      "notes": "Middle and latter part calm.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -280,7 +280,7 @@
       "course": "ESE",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Latter part squally wind ENE, one sail in sight.",
+      "notes": "Middle part the same, latter part squally wind ENE, one sail in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -367,7 +367,7 @@
       "time": null,
       "latitude": 74.117,
       "longitude": -38.283,
-      "weather": "fresh breezes",
+      "weather": null,
       "course": "S by E",
       "windDirection": "ESE",
       "temperature": null,
@@ -385,7 +385,7 @@
       "course": "SE by S",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Middle part squally, crew employed variously.",
+      "notes": "Middle part squally, latter part fresh gales from SE.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -427,7 +427,7 @@
       "course": "SSE",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Fresh breezes from the East.",
+      "notes": "Took a breeze from the East.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -436,12 +436,12 @@
       "date": "1842-11-03",
       "time": null,
       "latitude": 10.183,
-      "longitude": -36.3,
+      "longitude": null,
       "weather": "fresh breezes",
       "course": null,
       "windDirection": "E",
       "temperature": null,
-      "notes": null,
+      "notes": "Middle fresh wind ESE, latter part light winds from the East.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -450,12 +450,12 @@
       "date": "1842-11-04",
       "time": null,
       "latitude": 9.35,
-      "longitude": -36.3,
+      "longitude": null,
       "weather": "fine breezes",
       "course": null,
       "windDirection": "E",
       "temperature": null,
-      "notes": null,
+      "notes": "Middle part light airs with rain squalls.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -476,14 +476,14 @@
     },
     {
       "date": "1842-11-06",
-      "time": "10:00",
+      "time": null,
       "latitude": 8.467,
       "longitude": -33.567,
       "weather": "light breezes",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw finback.",
+      "notes": "Saw finback at 10 AM.",
       "whaleSightings": [
         {
           "species": "finback",
@@ -498,14 +498,21 @@
     {
       "date": "1842-11-07",
       "time": null,
-      "latitude": null,
+      "latitude": 7.483,
       "longitude": null,
       "weather": "light breezes",
       "course": null,
-      "windDirection": "E",
+      "windDirection": null,
       "temperature": null,
-      "notes": "At 14:00 saw Blackfish, lowered and struck and drew.",
-      "whaleSightings": [],
+      "notes": "At 2 PM saw Blackfish, lowered and struck and drew.",
+      "whaleSightings": [
+        {
+          "species": "Blackfish",
+          "count": 1,
+          "caught": true,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -518,7 +525,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": null,
+      "notes": "Middle part the same.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -532,7 +539,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": null,
+      "notes": "Middle part heavy rains and calm.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -544,7 +551,7 @@
       "longitude": -30.55,
       "weather": "fresh breezes with heavy rain squalls",
       "course": null,
-      "windDirection": "E",
+      "windDirection": null,
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -560,7 +567,7 @@
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": null,
+      "notes": "Middle part the same.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -640,11 +647,11 @@
       "time": null,
       "latitude": 4.617,
       "longitude": -27.766,
-      "weather": "light winds and heavy rain squalls from the South",
+      "weather": "light winds and heavy rain",
       "course": null,
-      "windDirection": "South",
+      "windDirection": "south",
       "temperature": null,
-      "notes": "Steward used insulting language and threats to the captain.",
+      "notes": "Steward used very insulting language and threats to the captain. Took him and flogged him, put him in irons below.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -652,7 +659,7 @@
           "crewMemberName": "Issac Foster",
           "role": "steward",
           "eventType": "other",
-          "description": "Flogged and put in irons."
+          "description": "Used insulting language and threats to the captain."
         }
       ]
     },
@@ -679,17 +686,17 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw Blackfish. Lowered two boats did not get fast.",
-      "whaleSightings": [],
-      "catches": [],
-      "crewEvents": [
+      "notes": "Saw Blackfish. Lowered two boats did not get fast. Steward in irons.",
+      "whaleSightings": [
         {
-          "crewMemberName": null,
-          "role": null,
-          "eventType": "other",
-          "description": "Steward in irons."
+          "species": "Blackfish",
+          "count": 0,
+          "caught": false,
+          "notes": "Lowered two boats did not get fast."
         }
-      ]
+      ],
+      "catches": [],
+      "crewEvents": []
     },
     {
       "date": "1842-11-20",
@@ -708,34 +715,27 @@
     {
       "date": "1842-11-21",
       "time": null,
-      "latitude": 4.05,
-      "longitude": -35.567,
+      "latitude": 4.283,
+      "longitude": -26.267,
       "weather": "variable winds and calms with heavy rains",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "One sail in sight. No observations.",
+      "notes": "One sail in sight. Steward in irons. No observations.",
       "whaleSightings": [],
       "catches": [],
-      "crewEvents": [
-        {
-          "crewMemberName": null,
-          "role": null,
-          "eventType": "other",
-          "description": "Steward in irons."
-        }
-      ]
+      "crewEvents": []
     },
     {
       "date": "1842-11-22",
       "time": null,
       "latitude": 4.45,
-      "longitude": -35.567,
+      "longitude": -28,
       "weather": "light airs and calms",
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Wind varied from ENE to ESE with rain. Steward in irons.",
+      "notes": "Steward in irons. No observations.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -743,13 +743,13 @@
     {
       "date": "1842-11-23",
       "time": null,
-      "latitude": 4.05,
-      "longitude": -35.567,
+      "latitude": 4.167,
+      "longitude": -28,
       "weather": "variable winds with heavy rains",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Employed various in rigging. Steward in irons.",
+      "notes": "Employed various in rigging. Steward in irons. No observations.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -777,7 +777,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "One Brig in sight. Steward in irons.",
+      "notes": "One Brig in sight. Steward in irons. No observations.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -819,7 +819,7 @@
       "course": "SW",
       "windDirection": "SSE",
       "temperature": null,
-      "notes": "Steward returned to duty of cook on promising to behave.",
+      "notes": "Steward returned to the duty of cook on promising to behave himself.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -827,7 +827,7 @@
     {
       "date": "1842-11-29",
       "time": null,
-      "latitude": 25,
+      "latitude": -25,
       "longitude": -27.983,
       "weather": "fine breezes from SE",
       "course": "SSW",
@@ -896,7 +896,7 @@
       "course": "S",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Crew employed variously in rigging. Carpenter employed building a round house.",
+      "notes": "Crew employed variously in rigging. Carpenter employed building a round house. Nothing in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -931,7 +931,7 @@
       "course": "S",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Crew employed repairing sails. One ship lost her topmast in a squall.",
+      "notes": "Crew employed repairing sails. Carpenter and cooper employed building the roundhouse. Two sail in sight. One ship lost her topmast in a squall.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -959,7 +959,7 @@
       "course": "S",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Crew employed repairing sails. Carpenter employed building roundhouse.",
+      "notes": "Crew employed repairing sails. Carpenter employed building roundhouse. One sail in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -973,7 +973,7 @@
       "course": "S",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Employed in repairing sails and rigging. One sail in sight.",
+      "notes": "Employed in repairing sails and in rigging. One sail in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -999,7 +999,7 @@
       "longitude": -27.033,
       "weather": "fresh breezes from the east with squalls",
       "course": null,
-      "windDirection": "E",
+      "windDirection": "east",
       "temperature": null,
       "notes": "Crew employed in rigging.",
       "whaleSightings": [],
@@ -1013,7 +1013,7 @@
       "longitude": -26.6,
       "weather": "light winds from the east",
       "course": null,
-      "windDirection": "E",
+      "windDirection": "east",
       "temperature": null,
       "notes": "Employed painting ship.",
       "whaleSightings": [],
@@ -1027,7 +1027,7 @@
       "longitude": null,
       "weather": "fine breezes from the east",
       "course": "SSE",
-      "windDirection": "E",
+      "windDirection": null,
       "temperature": null,
       "notes": "Set the fore topmast studding sail. Employed turning in the mizzen topmast rigging.",
       "whaleSightings": [],
@@ -1055,7 +1055,7 @@
       "longitude": -21.667,
       "weather": "fresh breezes from the North",
       "course": "SE",
-      "windDirection": "N",
+      "windDirection": "North",
       "temperature": null,
       "notes": "Employed setting up the main rigging. Cooper making breakers.",
       "whaleSightings": [],
@@ -1069,7 +1069,7 @@
       "longitude": -18.3,
       "weather": "strong breezes from the north",
       "course": "SE by S",
-      "windDirection": "N",
+      "windDirection": "North",
       "temperature": null,
       "notes": "Crew employed in rigging.",
       "whaleSightings": [],
@@ -1081,11 +1081,11 @@
       "time": "06:00",
       "latitude": -36.4,
       "longitude": -12.333,
-      "weather": "strong gales from the NNW with rain",
+      "weather": "strong breezes from the north",
       "course": "SE by S",
-      "windDirection": "NNW",
+      "windDirection": "North",
       "temperature": null,
-      "notes": "Spoke an English brig. Took in topgallant sails and double reefed the topsails.",
+      "notes": "Spoke an English brig. Middle part fresh gales from the north. Latter part hard gales took in topgallant sails and double reefed the topsails.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1099,8 +1099,15 @@
       "course": "SE by S",
       "windDirection": "NNW",
       "temperature": null,
-      "notes": "Saw plenty of finbacks. Employed in bending courses and in rigging.",
-      "whaleSightings": [],
+      "notes": "At 6 PM wind hauled to west with moderate breezes and clear weather. Saw plenty of finbacks. Employed in bending courses and in rigging.",
+      "whaleSightings": [
+        {
+          "species": "Finbacks",
+          "count": 0,
+          "caught": false,
+          "notes": "Saw plenty of finbacks."
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -1125,7 +1132,7 @@
       "longitude": null,
       "weather": "light breezes from the SW",
       "course": null,
-      "windDirection": null,
+      "windDirection": "SW",
       "temperature": null,
       "notes": "Saw right whale and three large sperm going quick. Lowered but did not get fast.",
       "whaleSightings": [
@@ -1133,24 +1140,17 @@
           "species": "Right Whale",
           "count": 1,
           "caught": false,
-          "notes": null
+          "notes": "Lowered but did not get fast."
         },
         {
           "species": "Sperm Whale",
           "count": 3,
           "caught": false,
-          "notes": null
+          "notes": "Lowered but did not get fast."
         }
       ],
       "catches": [],
-      "crewEvents": [
-        {
-          "crewMemberName": null,
-          "role": null,
-          "eventType": "other",
-          "description": "Captain and Second mate on shore."
-        }
-      ]
+      "crewEvents": []
     },
     {
       "date": "1842-12-20",
@@ -1171,14 +1171,7 @@
         }
       ],
       "catches": [],
-      "crewEvents": [
-        {
-          "crewMemberName": null,
-          "role": null,
-          "eventType": "other",
-          "description": "Captain, mate, and Third mate on shore getting off recruits."
-        }
-      ]
+      "crewEvents": []
     },
     {
       "date": "1842-12-21",
@@ -1204,7 +1197,14 @@
       "windDirection": "W",
       "temperature": null,
       "notes": "Saw Finbacks.",
-      "whaleSightings": [],
+      "whaleSightings": [
+        {
+          "species": "Finbacks",
+          "count": 0,
+          "caught": false,
+          "notes": "Saw Finbacks."
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -1234,15 +1234,15 @@
       "time": "06:00",
       "latitude": -38.283,
       "longitude": null,
-      "weather": "hard gale",
+      "weather": "fresh breezes",
       "course": "SE by E",
       "windDirection": "WNW",
       "temperature": null,
-      "notes": "Saw plenty of finbacks. Split a topgalant studing sail.",
+      "notes": "Saw plenty of finbacks. Split a topgallant studding sail.",
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 0,
+          "count": null,
           "caught": false,
           "notes": null
         }
@@ -1283,11 +1283,11 @@
       "time": "18:30",
       "latitude": -39.567,
       "longitude": 14.567,
-      "weather": "hard gale",
+      "weather": "fresh breezes",
       "course": "SE by E",
-      "windDirection": "NNW",
+      "windDirection": "N",
       "temperature": null,
-      "notes": "Brought the ship under close reeft.",
+      "notes": "Took the studding sails. Brought the ship under close reefed.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1297,7 +1297,7 @@
       "time": null,
       "latitude": null,
       "longitude": null,
-      "weather": "strong gales with hard squalls",
+      "weather": "strong gales",
       "course": "SE by E",
       "windDirection": "NNW",
       "temperature": null,
@@ -1313,7 +1313,7 @@
       "longitude": 20.617,
       "weather": "light breezes",
       "course": "SE by E 1/2 E",
-      "windDirection": "N",
+      "windDirection": "NE",
       "temperature": null,
       "notes": "One sail in sight.",
       "whaleSightings": [],
@@ -1346,7 +1346,7 @@
       "notes": "Spoke the Barque Emma N. Bedford one whale.",
       "whaleSightings": [
         {
-          "species": "unknown",
+          "species": null,
           "count": 1,
           "caught": false,
           "notes": null
@@ -1368,7 +1368,7 @@
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 0,
+          "count": null,
           "caught": false,
           "notes": null
         }
@@ -1381,15 +1381,15 @@
       "time": null,
       "latitude": -40.117,
       "longitude": 30.217,
-      "weather": "light winds and pleasant weather",
+      "weather": "light winds",
       "course": "SSE",
       "windDirection": "W",
       "temperature": null,
-      "notes": "Employed painting ship. Saw finbacks.",
+      "notes": "Employed painting ship.",
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 0,
+          "count": null,
           "caught": false,
           "notes": null
         }
@@ -1406,10 +1406,10 @@
       "course": "SSE",
       "windDirection": "NNE",
       "temperature": null,
-      "notes": "Saw wright whale lowered could not get fast.",
+      "notes": "Saw right whale lowered could not get fast.",
       "whaleSightings": [
         {
-          "species": "Wright",
+          "species": "Right whale",
           "count": 1,
           "caught": false,
           "notes": null
@@ -1431,7 +1431,7 @@
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 0,
+          "count": null,
           "caught": false,
           "notes": null
         }
@@ -1448,10 +1448,10 @@
       "course": "SE",
       "windDirection": "NNE",
       "temperature": null,
-      "notes": "Saw two wright whale lowered but did not succeed in getting fast.",
+      "notes": "Saw two right whales lowered but did not succeed in getting fast.",
       "whaleSightings": [
         {
-          "species": "Wright",
+          "species": "Right whale",
           "count": 2,
           "caught": false,
           "notes": null
@@ -1479,15 +1479,15 @@
       "time": null,
       "latitude": -42.117,
       "longitude": 48.267,
-      "weather": "light winds with heavy rain",
+      "weather": "fresh breezes",
       "course": "ESE",
-      "windDirection": "N",
+      "windDirection": null,
       "temperature": null,
       "notes": "Saw finbacks.",
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 0,
+          "count": null,
           "caught": false,
           "notes": null
         }
@@ -1514,11 +1514,11 @@
       "time": "18:30",
       "latitude": -43.983,
       "longitude": 48.217,
-      "weather": "thick and rainy",
+      "weather": "light breezes",
       "course": "SW by S",
       "windDirection": "N",
       "temperature": null,
-      "notes": null,
+      "notes": "Thick and rainy.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1544,7 +1544,7 @@
       "longitude": 49.233,
       "weather": "light breezes",
       "course": null,
-      "windDirection": "N",
+      "windDirection": null,
       "temperature": null,
       "notes": "Two sail in sight.",
       "whaleSightings": [],
@@ -1556,11 +1556,11 @@
       "time": null,
       "latitude": -44.283,
       "longitude": 48.917,
-      "weather": "fresh breezes with thick fog",
+      "weather": "fresh breezes",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Tow two sail in sight.",
+      "notes": "At sunset took in sail for the night. Two sail in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1574,7 +1574,7 @@
       "course": null,
       "windDirection": "W",
       "temperature": null,
-      "notes": "Came on calm.",
+      "notes": "Came on calm. Made all sail with a light breeze from the NW. Four sail in sight. Two boiling.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1588,10 +1588,10 @@
       "course": null,
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Saw one wright whale lowered could not get on.",
+      "notes": "Saw one right whale lowered could not get on.",
       "whaleSightings": [
         {
-          "species": "Wright",
+          "species": "Right whale",
           "count": 1,
           "caught": false,
           "notes": null
@@ -1609,7 +1609,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Spoke the Ship Halceon of New London. Eleven months out. 3. whale.",
+      "notes": "Spoke the Ship Halcyon of New London. Eleven months out. 3 whale.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1617,28 +1617,42 @@
     {
       "date": "1843-01-17",
       "time": null,
-      "latitude": null,
-      "longitude": null,
-      "weather": "thick rainy weather",
+      "latitude": -44.7,
+      "longitude": 49.417,
+      "weather": "fresh gales",
       "course": null,
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Saw whale lowered got fast irons drawed came on thick fog.",
-      "whaleSightings": [],
+      "notes": "Saw whale lowered got fast irons drawn.",
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": null,
+          "caught": false,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
     {
       "date": "1843-01-18",
-      "time": "18:00",
+      "time": null,
       "latitude": -44.7,
       "longitude": 49.417,
-      "weather": "thick fog",
+      "weather": "strong breezes",
       "course": null,
       "windDirection": "NNE",
       "temperature": null,
       "notes": "Saw whale lowered and mist came on board.",
-      "whaleSightings": [],
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": null,
+          "caught": false,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -1651,10 +1665,10 @@
       "course": null,
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Saw one wright whale to windward.",
+      "notes": "Saw one right whale to windward.",
       "whaleSightings": [
         {
-          "species": "Wright",
+          "species": "Right whale",
           "count": 1,
           "caught": false,
           "notes": null
@@ -1682,7 +1696,7 @@
       "time": null,
       "latitude": -44.7,
       "longitude": 49.483,
-      "weather": null,
+      "weather": "fresh gales",
       "course": null,
       "windDirection": null,
       "temperature": null,
@@ -1692,68 +1706,26 @@
       "crewEvents": []
     },
     {
-      "date": "1843-01-22",
-      "time": null,
-      "latitude": null,
-      "longitude": null,
-      "weather": "thick fog",
-      "course": null,
-      "windDirection": "SW",
-      "temperature": null,
-      "notes": "One sail in sight.",
-      "whaleSightings": [],
-      "catches": [],
-      "crewEvents": []
-    },
-    {
-      "date": "1843-01-23",
-      "time": "18:00",
-      "latitude": null,
-      "longitude": null,
-      "weather": "hard gales",
-      "course": null,
-      "windDirection": "SW",
-      "temperature": null,
-      "notes": "Saw whale lowered. Did not get fast.",
-      "whaleSightings": [],
-      "catches": [],
-      "crewEvents": []
-    },
-    {
-      "date": "1843-01-24",
-      "time": null,
-      "latitude": null,
-      "longitude": null,
-      "weather": "fine breezes",
-      "course": null,
-      "windDirection": "NNW",
-      "temperature": null,
-      "notes": null,
-      "whaleSightings": [],
-      "catches": [],
-      "crewEvents": []
-    },
-    {
       "date": "1843-01-25",
-      "time": "15:00",
+      "time": null,
       "latitude": -44.517,
       "longitude": 49.633,
-      "weather": "thick weather",
+      "weather": "fresh breezes from NW",
       "course": null,
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Saw whale lowered and got fast.",
+      "notes": "Employed boiling.",
       "whaleSightings": [
         {
           "species": null,
-          "count": 1,
-          "caught": true,
-          "notes": null
+          "count": 10,
+          "caught": false,
+          "notes": "Spoke the Barque Phenix of Sag Harbor."
         }
       ],
       "catches": [
         {
-          "whaleCount": 1,
+          "whaleCount": null,
           "oilBarrels": 65,
           "blubberWeight": null,
           "boneWeight": null,
@@ -1764,15 +1736,22 @@
     },
     {
       "date": "1843-01-26",
-      "time": "18:00",
+      "time": null,
       "latitude": -44.833,
       "longitude": 49.8,
-      "weather": "fresh gales",
+      "weather": "fresh gales from the north",
       "course": "ESE",
       "windDirection": "N",
       "temperature": null,
-      "notes": "Saw whale too rugged to lower.",
-      "whaleSightings": [],
+      "notes": "Employed boiling.",
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": 11,
+          "caught": false,
+          "notes": "Spoke the Ship Arunaut of Mystic."
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -1795,11 +1774,11 @@
       "time": "16:00",
       "latitude": -44.867,
       "longitude": 49.85,
-      "weather": "hard gales",
+      "weather": "hard gales from the N",
       "course": null,
       "windDirection": "N",
       "temperature": null,
-      "notes": "Finished stowing and reefed the main topsail.",
+      "notes": "Finished stowing. Close reefed the main topsail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1809,15 +1788,15 @@
       "time": "22:00",
       "latitude": -44.767,
       "longitude": 49.917,
-      "weather": "moderate weather",
+      "weather": "hard gales from the NW",
       "course": null,
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Spoke the ship John Elizabeth.",
+      "notes": "Spoke the ship John Elizabeth of New London.",
       "whaleSightings": [
         {
           "species": null,
-          "count": 1,
+          "count": 9,
           "caught": false,
           "notes": null
         }
@@ -1828,14 +1807,21 @@
     {
       "date": "1843-01-30",
       "time": "13:00",
-      "latitude": -44.667,
-      "longitude": 49.75,
-      "weather": "light breezes",
+      "latitude": null,
+      "longitude": null,
+      "weather": "light breezes from the north",
       "course": "E by S",
       "windDirection": "N",
       "temperature": null,
-      "notes": "Saw whale lowered but did not get fast.",
-      "whaleSightings": [],
+      "notes": "Made all sail.",
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": 0,
+          "caught": false,
+          "notes": "Saw whale lowered did not get fast."
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -1844,7 +1830,7 @@
       "time": null,
       "latitude": -44.75,
       "longitude": 58.267,
-      "weather": "thick and rainy",
+      "weather": "fresh gales from NE with thick and rainy weather",
       "course": "SE by E",
       "windDirection": "NE",
       "temperature": null,
@@ -1858,7 +1844,7 @@
       "time": "04:00",
       "latitude": -45,
       "longitude": 61,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the NNE",
       "course": "SE by E",
       "windDirection": "NNE",
       "temperature": null,
@@ -1872,7 +1858,7 @@
       "time": null,
       "latitude": -44.433,
       "longitude": 65.217,
-      "weather": "fresh gales",
+      "weather": "fresh breezes from the west",
       "course": "E by S",
       "windDirection": "W",
       "temperature": null,
@@ -1886,9 +1872,9 @@
       "time": null,
       "latitude": -44.733,
       "longitude": 69.083,
-      "weather": "light breezes",
+      "weather": "fresh breezes from the west",
       "course": "SE by E",
-      "windDirection": "NW",
+      "windDirection": "W",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -1900,7 +1886,7 @@
       "time": null,
       "latitude": -45.067,
       "longitude": 73.033,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the NNE",
       "course": "SE by E",
       "windDirection": "NNE",
       "temperature": null,
@@ -1914,7 +1900,7 @@
       "time": null,
       "latitude": -43.667,
       "longitude": 81.367,
-      "weather": "fine breezes",
+      "weather": "fine breezes from the NNW",
       "course": "SE by E",
       "windDirection": "NNW",
       "temperature": null,
@@ -1926,9 +1912,9 @@
     {
       "date": "1843-02-07",
       "time": null,
-      "latitude": -43.5,
+      "latitude": -43.667,
       "longitude": 81.367,
-      "weather": "strong breezes",
+      "weather": "strong breezes from the NNW",
       "course": "SE by E",
       "windDirection": "NNW",
       "temperature": null,
@@ -1940,9 +1926,9 @@
     {
       "date": "1843-02-08",
       "time": null,
-      "latitude": -43.5,
-      "longitude": 81.367,
-      "weather": "thick fog with rain",
+      "latitude": null,
+      "longitude": null,
+      "weather": "strong breezes from the NNW",
       "course": "ESE",
       "windDirection": "NNW",
       "temperature": null,
@@ -1954,9 +1940,9 @@
     {
       "date": "1843-02-09",
       "time": null,
-      "latitude": -43.5,
-      "longitude": 81.367,
-      "weather": "light breezes",
+      "latitude": null,
+      "longitude": null,
+      "weather": "light breezes from the WNW",
       "course": "SE by E",
       "windDirection": "WNW",
       "temperature": null,
@@ -1969,12 +1955,12 @@
       "date": "1843-02-10",
       "time": "15:00",
       "latitude": -43.617,
-      "longitude": 92,
-      "weather": "thick fog",
-      "course": "SE by E",
-      "windDirection": "S",
+      "longitude": null,
+      "weather": "light breezes from the NW and thick fog",
+      "course": null,
+      "windDirection": "NW",
       "temperature": null,
-      "notes": "Wind hauls to the S with heavy squalls.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -1984,28 +1970,35 @@
       "time": "08:00",
       "latitude": -43.65,
       "longitude": 95.167,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the SW",
       "course": "SE by E",
       "windDirection": "SW",
       "temperature": null,
       "notes": "Saw one right whale lowered and got fast with two boats.",
       "whaleSightings": [
         {
-          "species": "Right whale",
+          "species": "right whale",
           "count": 1,
           "caught": false,
           "notes": "Sounded got foul line had to cut away."
         }
       ],
       "catches": [],
-      "crewEvents": []
+      "crewEvents": [
+        {
+          "crewMemberName": null,
+          "role": null,
+          "eventType": "other",
+          "description": "Lost two lances, three irons and 30 fathoms of line."
+        }
+      ]
     },
     {
       "date": "1843-02-12",
       "time": null,
       "latitude": -43.917,
       "longitude": 99.967,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the W",
       "course": "SE by E",
       "windDirection": "W",
       "temperature": null,
@@ -2017,9 +2010,9 @@
     {
       "date": "1843-02-13",
       "time": null,
-      "latitude": -43.75,
-      "longitude": 99.967,
-      "weather": "fine breezes",
+      "latitude": null,
+      "longitude": null,
+      "weather": "fine breezes from the west",
       "course": "SE",
       "windDirection": "W",
       "temperature": null,
@@ -2031,13 +2024,13 @@
     {
       "date": "1843-02-14",
       "time": null,
-      "latitude": -43.75,
-      "longitude": 99.967,
-      "weather": "thick weather with rain",
+      "latitude": null,
+      "longitude": null,
+      "weather": "fresh breezes from the NW",
       "course": "SE",
       "windDirection": "NW",
       "temperature": null,
-      "notes": null,
+      "notes": "Thick weather with rain.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2045,13 +2038,13 @@
     {
       "date": "1843-02-15",
       "time": null,
-      "latitude": -43.167,
-      "longitude": 174.567,
-      "weather": "light breezes",
+      "latitude": null,
+      "longitude": null,
+      "weather": "light breezes from the NW",
       "course": "SE",
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Sent down the foretopsail for repairs.",
+      "notes": "Calm with thick fog.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2073,9 +2066,9 @@
     {
       "date": "1843-02-17",
       "time": null,
-      "latitude": -47.167,
-      "longitude": 174.567,
-      "weather": "fresh breezes",
+      "latitude": null,
+      "longitude": null,
+      "weather": "fresh breezes from the north",
       "course": "E",
       "windDirection": "N",
       "temperature": null,
@@ -2089,7 +2082,7 @@
       "time": null,
       "latitude": -45.7,
       "longitude": 123.133,
-      "weather": "light breezes",
+      "weather": "light breezes from the NW",
       "course": "E 1/2 N",
       "windDirection": "NW",
       "temperature": null,
@@ -2103,7 +2096,7 @@
       "time": null,
       "latitude": -45.5,
       "longitude": 126.7,
-      "weather": "light winds",
+      "weather": "light winds from the W",
       "course": "E by S",
       "windDirection": "W",
       "temperature": null,
@@ -2117,7 +2110,7 @@
       "time": null,
       "latitude": -45.7,
       "longitude": 130.583,
-      "weather": "fine breezes",
+      "weather": "fine breezes from the WNW",
       "course": "E by S",
       "windDirection": "WNW",
       "temperature": null,
@@ -2131,7 +2124,7 @@
       "time": null,
       "latitude": -45.683,
       "longitude": 134.083,
-      "weather": "fine breezes",
+      "weather": "fine breezes from the north",
       "course": "E by S",
       "windDirection": "N",
       "temperature": null,
@@ -2145,7 +2138,7 @@
       "time": null,
       "latitude": -47.6,
       "longitude": 138,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the NE",
       "course": "E by S",
       "windDirection": "NE",
       "temperature": null,
@@ -2159,7 +2152,7 @@
       "time": "03:00",
       "latitude": -48.083,
       "longitude": 141.25,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the NE",
       "course": "E 1/2 S",
       "windDirection": "NE",
       "temperature": null,
@@ -2173,7 +2166,7 @@
       "time": null,
       "latitude": -48.283,
       "longitude": 143.033,
-      "weather": "light breezes",
+      "weather": "light breezes from the west",
       "course": "E 1/2 N",
       "windDirection": "W",
       "temperature": null,
@@ -2191,7 +2184,7 @@
       "course": "NE",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Took a breeze from the east.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2201,11 +2194,11 @@
       "time": null,
       "latitude": -46.683,
       "longitude": 147.867,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the SE",
       "course": "E by N 1/2 N",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Wind hauled from the SW with thick fog.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2213,37 +2206,51 @@
     {
       "date": "1843-02-27",
       "time": null,
-      "latitude": -46.867,
+      "latitude": -46.767,
       "longitude": 55.667,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes from the west",
       "course": "E",
       "windDirection": "W",
       "temperature": null,
       "notes": "Came on to blow a hard gale from the west.",
       "whaleSightings": [],
       "catches": [],
-      "crewEvents": []
+      "crewEvents": [
+        {
+          "crewMemberName": null,
+          "role": null,
+          "eventType": "other",
+          "description": "Brought the ship under double reefed topsails."
+        }
+      ]
     },
     {
       "date": "1843-02-28",
-      "time": null,
+      "time": "06:00",
       "latitude": -46.867,
       "longitude": 55.667,
-      "weather": "hard gales",
+      "weather": "hard gales from the west",
       "course": "E by S",
       "windDirection": "W",
       "temperature": null,
       "notes": "Brought the ship under a close reef main topsail.",
       "whaleSightings": [],
       "catches": [],
-      "crewEvents": []
+      "crewEvents": [
+        {
+          "crewMemberName": null,
+          "role": null,
+          "eventType": "other",
+          "description": "Lost the waist boat by a sea."
+        }
+      ]
     },
     {
       "date": "1843-03-01",
       "time": null,
       "latitude": -47.667,
       "longitude": 160.517,
-      "weather": "hard gales",
+      "weather": "hard gales from the west",
       "course": "ESE",
       "windDirection": "W",
       "temperature": null,
@@ -2256,19 +2263,19 @@
       "date": "1843-03-02",
       "time": null,
       "latitude": -47.667,
-      "longitude": 160.517,
-      "weather": "hard gales with squalls",
+      "longitude": null,
+      "weather": "hard gales from the west",
       "course": "SE 1/2 E",
       "windDirection": "W",
       "temperature": null,
-      "notes": "Brought the ship under a close main topsail and foresail.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
     },
     {
       "date": "1843-03-03",
-      "time": "16:00",
+      "time": null,
       "latitude": null,
       "longitude": null,
       "weather": "thick weather and rain",
@@ -2285,11 +2292,11 @@
       "time": null,
       "latitude": -50.5,
       "longitude": 165.333,
-      "weather": "fresh breezes",
-      "course": "E by S",
+      "weather": "fresh gales",
+      "course": "ESE",
       "windDirection": "W",
       "temperature": null,
-      "notes": "Made all sail, saw land 30 miles distant.",
+      "notes": "Brought the ship too under a close reefed main topsail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2303,7 +2310,7 @@
       "course": "NE by E",
       "windDirection": "W",
       "temperature": null,
-      "notes": "No observations.",
+      "notes": "The island bearing west.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2323,7 +2330,7 @@
           "species": "right whale",
           "count": 0,
           "caught": false,
-          "notes": "Saw several."
+          "notes": "Saw several right whales."
         }
       ],
       "catches": [],
@@ -2338,7 +2345,7 @@
       "course": "NE",
       "windDirection": "W",
       "temperature": null,
-      "notes": "Saw a very large comet.",
+      "notes": "Saw a very large comet in the NW.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2352,7 +2359,7 @@
       "course": "NE",
       "windDirection": "W",
       "temperature": null,
-      "notes": "Spoke the Ship Fanney of Sagharber.",
+      "notes": "Spoke the Ship Fanney of Sag Harbor, 2600 barrels of oil.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2363,33 +2370,34 @@
       "latitude": -44.267,
       "longitude": -177.45,
       "weather": "fresh breezes",
-      "course": "E by S",
-      "windDirection": "WSW",
+      "course": "ENE",
+      "windDirection": "W",
       "temperature": null,
-      "notes": "Steering under all sail.",
+      "notes": "Steering ENE under all sail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
     },
     {
       "date": "1843-03-09",
-      "time": "19:30",
+      "time": "16:00",
       "latitude": -44.667,
       "longitude": -176.167,
       "weather": "fresh breezes",
-      "course": null,
-      "windDirection": null,
+      "course": "Southward",
+      "windDirection": "WSW",
       "temperature": null,
-      "notes": "Saw sperm whale, lowered and got fast.",
-      "whaleSightings": [
+      "notes": "Made the Chatham Islands.",
+      "whaleSightings": [],
+      "catches": [
         {
-          "species": "sperm whale",
-          "count": 2,
-          "caught": true,
-          "notes": "Commenced cutting."
+          "whaleCount": 2,
+          "oilBarrels": null,
+          "blubberWeight": null,
+          "boneWeight": null,
+          "notes": "Two large sperm whales alongside."
         }
       ],
-      "catches": [],
       "crewEvents": []
     },
     {
@@ -2421,7 +2429,7 @@
       "longitude": -144.867,
       "weather": "fresh gales",
       "course": null,
-      "windDirection": null,
+      "windDirection": "NW",
       "temperature": null,
       "notes": "Finished cutting the second whale.",
       "whaleSightings": [],
@@ -2447,7 +2455,7 @@
       "time": "11:00",
       "latitude": -42.667,
       "longitude": -172.667,
-      "weather": "light breezes",
+      "weather": "light breezes with fine weather",
       "course": null,
       "windDirection": null,
       "temperature": null,
@@ -2463,7 +2471,7 @@
       "longitude": -170.667,
       "weather": "fine breezes",
       "course": "NNE",
-      "windDirection": "E",
+      "windDirection": "SE",
       "temperature": null,
       "notes": "Commenced stowing in the main hatch.",
       "whaleSightings": [],
@@ -2505,9 +2513,9 @@
       "longitude": -167.217,
       "weather": "light breezes",
       "course": "NNE",
-      "windDirection": null,
+      "windDirection": "SW",
       "temperature": null,
-      "notes": "Employed bending jibs.",
+      "notes": "Employed bending jib and flying jib.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2519,7 +2527,7 @@
       "longitude": -165.217,
       "weather": "light breezes",
       "course": "NNE",
-      "windDirection": null,
+      "windDirection": "WSW",
       "temperature": null,
       "notes": "Carried away the mizzen topsail yard.",
       "whaleSightings": [],
@@ -2531,7 +2539,7 @@
       "time": null,
       "latitude": -33.7,
       "longitude": -161.883,
-      "weather": "fresh breezes",
+      "weather": "fresh breezes with hard squalls",
       "course": "NE by N",
       "windDirection": "WSW",
       "temperature": null,
@@ -2546,8 +2554,8 @@
       "latitude": -31.583,
       "longitude": -159.167,
       "weather": "light breezes",
-      "course": "NE by N 1/2 N",
-      "windDirection": "SE",
+      "course": "NE by N",
+      "windDirection": "SW",
       "temperature": null,
       "notes": "Sent the mizzen topsail yard aloft.",
       "whaleSightings": [],
@@ -2556,14 +2564,14 @@
     },
     {
       "date": "1843-03-21",
-      "time": null,
+      "time": "16:30",
       "latitude": -29.3,
       "longitude": -158.6,
       "weather": "fresh gales",
       "course": "NE by N 1/2 N",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Doubled reefed the topsails.",
+      "notes": "Double reefed the topsails.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2572,10 +2580,10 @@
       "date": "1843-03-22",
       "time": null,
       "latitude": -26.85,
-      "longitude": -156.85,
+      "longitude": -156.017,
       "weather": "fresh breezes",
       "course": "NE by N",
-      "windDirection": null,
+      "windDirection": "SE",
       "temperature": null,
       "notes": "Employed repairing sails.",
       "whaleSightings": [],
@@ -2588,8 +2596,8 @@
       "latitude": -25.183,
       "longitude": -155.7,
       "weather": "fresh breezes",
-      "course": "NE 1/2 N",
-      "windDirection": null,
+      "course": "N by W",
+      "windDirection": "NE",
       "temperature": null,
       "notes": "Wind hauled to the NE.",
       "whaleSightings": [],
@@ -2602,7 +2610,7 @@
       "latitude": -24.85,
       "longitude": -154.9,
       "weather": "light breezes",
-      "course": null,
+      "course": "E",
       "windDirection": "N",
       "temperature": null,
       "notes": "Saw a sail bearing SW.",
@@ -2619,7 +2627,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Light winds from NNE to ENE.",
+      "notes": "Ends with light winds.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2659,9 +2667,9 @@
       "longitude": -151.833,
       "weather": "fine breezes",
       "course": "NE by N",
-      "windDirection": null,
+      "windDirection": "ESE",
       "temperature": null,
-      "notes": "Steering under all sail.",
+      "notes": "Steering NE by N under all sail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2673,7 +2681,7 @@
       "longitude": -150.667,
       "weather": "fresh breezes",
       "course": "NE",
-      "windDirection": null,
+      "windDirection": "SE",
       "temperature": null,
       "notes": "Made the Island of Maria.",
       "whaleSightings": [],
@@ -2715,7 +2723,7 @@
       "longitude": -149.95,
       "weather": "light breezes",
       "course": null,
-      "windDirection": null,
+      "windDirection": "NNE",
       "temperature": null,
       "notes": "Made the Island of Otaheite.",
       "whaleSightings": [],
@@ -2724,14 +2732,14 @@
     },
     {
       "date": "1843-04-02",
-      "time": null,
+      "time": "18:00",
       "latitude": -18.667,
       "longitude": -149.95,
       "weather": "light airs and calms",
       "course": "NE",
       "windDirection": null,
       "temperature": null,
-      "notes": "Steered NE by E in for the land.",
+      "notes": "Took a breeze from the south.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2741,7 +2749,7 @@
       "time": null,
       "latitude": null,
       "longitude": null,
-      "weather": "calms",
+      "weather": null,
       "course": null,
       "windDirection": null,
       "temperature": null,
@@ -2759,7 +2767,7 @@
       "course": "steering in for Otaheite Harbour",
       "windDirection": "ENE",
       "temperature": null,
-      "notes": "Took a pilot at 10 AM, came to anchor in Oaitipeha Bay.",
+      "notes": "Took a pilot at 10 AM, anchored in Oaitipeha Bay.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2787,7 +2795,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Employed getting off water and wood, and yams and potatoes.",
+      "notes": "Employed getting off water and wood, yams and potatoes.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2843,7 +2851,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "All hands on board took off one boat and other goods.",
+      "notes": "All hands on board took off one boat and other goods. Alexander Read ran from the ship.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -2878,7 +2886,7 @@
       "course": "steering NNE",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Carried away the fore topgallant yard.",
+      "notes": "Carried away the fore topgallant yard, sent another yard aloft.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2892,7 +2900,7 @@
       "course": "steering north",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Crew employed variously, carpenter making a davy.",
+      "notes": "Crew employed variously.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2902,9 +2910,9 @@
       "time": null,
       "latitude": -10.133,
       "longitude": -149.767,
-      "weather": "fine breezes from SE",
+      "weather": "fine breezes from SE, light winds from the east",
       "course": "heading N",
-      "windDirection": "SE",
+      "windDirection": "E",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -2913,10 +2921,10 @@
     },
     {
       "date": "1843-04-15",
-      "time": "17:00",
+      "time": null,
       "latitude": -8.367,
       "longitude": -149.8,
-      "weather": "fine breezes from the east",
+      "weather": "light breezes from east",
       "course": "heading NNE",
       "windDirection": "E",
       "temperature": null,
@@ -2948,7 +2956,7 @@
       "course": "steering N by E",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Blacksmith employed splicing lances.",
+      "notes": "Crew employed splicing lances.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2962,7 +2970,7 @@
       "course": "steering N by E",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Carpenter employed making a skylight.",
+      "notes": "Crew employed sitting up rigging.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2970,13 +2978,13 @@
     {
       "date": "1843-04-19",
       "time": null,
-      "latitude": null,
-      "longitude": null,
+      "latitude": 45,
+      "longitude": -149.933,
       "weather": "light winds from the ESE",
       "course": "steering N by E",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Employed setting up the rigging.",
+      "notes": "Crew employed setting up the rigging.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -2990,7 +2998,7 @@
       "course": "steering N 1/2 E",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": "Employed setting up rigging.",
+      "notes": "Crew employed setting up rigging.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3013,8 +3021,8 @@
       "date": "1843-04-22",
       "time": null,
       "latitude": 5.333,
-      "longitude": -151,
-      "weather": "light breezes from the east",
+      "longitude": -150.5,
+      "weather": "light breezes from the east, wind E by N",
       "course": "steering NNE",
       "windDirection": "E",
       "temperature": null,
@@ -3056,7 +3064,7 @@
       "time": null,
       "latitude": 12.35,
       "longitude": -152.917,
-      "weather": "fresh breezes from the NE",
+      "weather": "fresh breezes from the NE, strong breezes fore and mizzen topgallant sails in",
       "course": "steering NNW",
       "windDirection": "NE",
       "temperature": null,
@@ -3070,11 +3078,11 @@
       "time": "18:00",
       "latitude": 15.167,
       "longitude": -154.167,
-      "weather": "strong breezes from the NE",
+      "weather": "strong breezes from the NE, fresh gales with hard squalls",
       "course": "steering NNW",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Double reefed the topsails.",
+      "notes": "Doubled reefed the topsails.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3088,7 +3096,7 @@
       "course": "steering NNW",
       "windDirection": "ENE",
       "temperature": null,
-      "notes": "Cooper employed setting up pipes for passage water.",
+      "notes": "Crew employed setting up pipes for passage water.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3099,7 +3107,7 @@
       "latitude": 19.5,
       "longitude": -156.417,
       "weather": "strong breezes from the east",
-      "course": "steering NW by N 1/2 N",
+      "course": "steering NNW",
       "windDirection": "E",
       "temperature": null,
       "notes": "Made the Island of Owhyhe, heavy squalls.",
@@ -3109,11 +3117,11 @@
     },
     {
       "date": "1843-04-29",
-      "time": null,
+      "time": "06:00",
       "latitude": 20,
       "longitude": -156.417,
       "weather": "light winds from the S",
-      "course": "standing in for Mowee",
+      "course": null,
       "windDirection": "S",
       "temperature": null,
       "notes": "Saw the Island of Mowee bearing NE 20 miles distant.",
@@ -3123,20 +3131,20 @@
     },
     {
       "date": "1843-04-30",
-      "time": null,
+      "time": "13:20",
       "latitude": null,
       "longitude": null,
       "weather": "calm",
-      "course": null,
+      "course": "steering W by N 1/2 N",
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw the Island of Woahoo bearing NNW 30 miles distant.",
+      "notes": "Saw sperm whales but did not get fast.",
       "whaleSightings": [
         {
           "species": "sperm whale",
-          "count": 0,
+          "count": 2,
           "caught": false,
-          "notes": "Did not get fast, whales going quick to windward."
+          "notes": "Did not get fast."
         }
       ],
       "catches": [],
@@ -3148,7 +3156,7 @@
       "latitude": 22.967,
       "longitude": -159.1,
       "weather": "fresh breezes from the NE",
-      "course": "standing in for the harbour",
+      "course": "steering W by N",
       "windDirection": "NE",
       "temperature": null,
       "notes": "The Captain went on shore at the Town of Woahoo.",
@@ -3179,7 +3187,7 @@
       "course": "steering NNE",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Employed stowing passage water and caulking ship.",
+      "notes": "Employed stowing passage water and corking ship.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3205,7 +3213,7 @@
       "longitude": -160.867,
       "weather": "light breezes from the east",
       "course": null,
-      "windDirection": null,
+      "windDirection": "E",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -3233,7 +3241,7 @@
       "longitude": null,
       "weather": "fine breezes from the south",
       "course": null,
-      "windDirection": null,
+      "windDirection": "S",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -3305,8 +3313,15 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw finbacks. Lowered for a sunfish.",
-      "whaleSightings": [],
+      "notes": "Saw finbacks.",
+      "whaleSightings": [
+        {
+          "species": "Finback",
+          "count": 1,
+          "caught": false,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -3319,7 +3334,7 @@
       "course": "N by W",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Lowered for sulfur bottoms. Did not get fast.",
+      "notes": "Lowered for sulfur bottoms, did not get fast.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3358,7 +3373,7 @@
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 5,
+          "count": 3,
           "caught": false,
           "notes": null
         }
@@ -3375,15 +3390,29 @@
       "course": "N by W 1/2 W",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Saw Finbacks. No observations.",
+      "notes": "Saw Finbacks.",
       "whaleSightings": [
         {
           "species": "Finback",
-          "count": 3,
+          "count": 1,
           "caught": false,
           "notes": null
         }
       ],
+      "catches": [],
+      "crewEvents": []
+    },
+    {
+      "date": "1843-05-17",
+      "time": null,
+      "latitude": 44.7,
+      "longitude": -149.417,
+      "weather": "foggy with rain",
+      "course": null,
+      "windDirection": "SW",
+      "temperature": null,
+      "notes": null,
+      "whaleSightings": [],
       "catches": [],
       "crewEvents": []
     },
@@ -3396,7 +3425,7 @@
       "course": "N by W 1/2 W",
       "windDirection": "SW",
       "temperature": null,
-      "notes": "No observations.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3415,7 +3444,7 @@
         {
           "species": "Wright",
           "count": 2,
-          "caught": true,
+          "caught": false,
           "notes": "Lost two irons."
         }
       ],
@@ -3431,7 +3460,7 @@
       "course": "N by W 1/2 W",
       "windDirection": "SW",
       "temperature": null,
-      "notes": "No observations.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3461,7 +3490,7 @@
       "date": "1843-05-22",
       "time": "13:00",
       "latitude": 52.567,
-      "longitude": -157.733,
+      "longitude": -157.567,
       "weather": "fine breezes",
       "course": null,
       "windDirection": "S",
@@ -3472,7 +3501,7 @@
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": null
+          "notes": "Saw several more going quick."
         }
       ],
       "catches": [],
@@ -3482,7 +3511,7 @@
       "date": "1843-05-23",
       "time": "07:00",
       "latitude": 53.167,
-      "longitude": -157.733,
+      "longitude": null,
       "weather": "fresh gales with fog",
       "course": null,
       "windDirection": "S",
@@ -3497,7 +3526,7 @@
       "time": "16:00",
       "latitude": 53.167,
       "longitude": null,
-      "weather": "fine weather",
+      "weather": "fine weather with light breezes",
       "course": null,
       "windDirection": null,
       "temperature": null,
@@ -3506,8 +3535,8 @@
         {
           "species": null,
           "count": 1,
-          "caught": true,
-          "notes": "Brought to ship and began to cut."
+          "caught": false,
+          "notes": null
         }
       ],
       "catches": [],
@@ -3557,7 +3586,7 @@
     },
     {
       "date": "1843-05-27",
-      "time": "16:00",
+      "time": null,
       "latitude": 53.567,
       "longitude": -153.567,
       "weather": "fine breezes",
@@ -3592,7 +3621,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Finished stowing 189 bbls of oil.",
+      "notes": "Finished stowing 189 barrels of oil.",
       "whaleSightings": [
         {
           "species": null,
@@ -3619,7 +3648,7 @@
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": "Made him fast for the night."
+          "notes": null
         }
       ],
       "catches": [],
@@ -3662,7 +3691,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw whale, lowered, struck.",
+      "notes": "Saw whale, lowered, struck, turned him up.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3676,7 +3705,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw whale, lowered, struck.",
+      "notes": "Employed cutting and boiling.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3690,21 +3719,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw whale, lowered, struck.",
-      "whaleSightings": [],
-      "catches": [],
-      "crewEvents": []
-    },
-    {
-      "date": "1843-06-05",
-      "time": null,
-      "latitude": null,
-      "longitude": null,
-      "weather": null,
-      "course": null,
-      "windDirection": null,
-      "temperature": null,
-      "notes": "Saw whale, lowered, struck.",
+      "notes": "Finished stowing 155 barrels of oil.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3718,7 +3733,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw whale, lowered, struck.",
+      "notes": "Saw whale lowered, did not get fast.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3732,7 +3747,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Saw whale, lowered, struck.",
+      "notes": "Finished boiling and commenced stowing.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3742,7 +3757,7 @@
       "time": null,
       "latitude": 54.5,
       "longitude": -49.333,
-      "weather": "fresh gales with fog",
+      "weather": "fresh gales",
       "course": null,
       "windDirection": null,
       "temperature": null,
@@ -3782,14 +3797,21 @@
     {
       "date": "1843-06-11",
       "time": "16:30",
-      "latitude": null,
+      "latitude": 54.567,
       "longitude": null,
-      "weather": "thick fog",
+      "weather": "light breezes with thick fog",
       "course": null,
       "windDirection": "SE",
       "temperature": null,
       "notes": "Saw whale lowered, struck, turned him up.",
-      "whaleSightings": [],
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": 1,
+          "caught": true,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -3798,9 +3820,9 @@
       "time": null,
       "latitude": null,
       "longitude": null,
-      "weather": "fog",
+      "weather": "light breezes with fog",
       "course": null,
-      "windDirection": null,
+      "windDirection": "W",
       "temperature": null,
       "notes": "Saw whales lowered, struck, turned him up.",
       "whaleSightings": [],
@@ -3830,7 +3852,7 @@
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Finished stowing 151 bbls of oil.",
+      "notes": "Finished stowing 151 barrels of oil.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -3839,7 +3861,7 @@
       "date": "1843-06-15",
       "time": "13:00",
       "latitude": 54,
-      "longitude": -151.44,
+      "longitude": -151.74,
       "weather": "fog with rain",
       "course": null,
       "windDirection": "east",
@@ -3850,7 +3872,7 @@
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "This whale proved to be a dry skin."
+          "notes": "Cut in the head throat and lips and let the body go. It proved to be a dry skin."
         }
       ],
       "catches": [],
@@ -3859,8 +3881,8 @@
     {
       "date": "1843-06-16",
       "time": "15:00",
-      "latitude": 54.03,
-      "longitude": -151.44,
+      "latitude": 54.05,
+      "longitude": -151.74,
       "weather": null,
       "course": null,
       "windDirection": "NE",
@@ -3871,7 +3893,7 @@
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": null
+          "notes": "Took the whale alongside cut him in."
         }
       ],
       "catches": [],
@@ -3880,8 +3902,8 @@
     {
       "date": "1843-06-17",
       "time": "15:30",
-      "latitude": 54.1,
-      "longitude": null,
+      "latitude": 54.167,
+      "longitude": -151.883,
       "weather": null,
       "course": null,
       "windDirection": "NE",
@@ -3892,7 +3914,7 @@
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": null
+          "notes": "Took in the head throat and lips and let the body lay for the night."
         }
       ],
       "catches": [],
@@ -3901,40 +3923,48 @@
     {
       "date": "1843-06-18",
       "time": "13:00",
-      "latitude": 54.1,
-      "longitude": null,
+      "latitude": 54.167,
+      "longitude": -149.25,
       "weather": "light winds from the SSW",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Stowed 58 barrels in the fore hold.",
+      "notes": "Employed boiling and stowing.",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Did not get fast."
+          "notes": "Saw whale lowered did not get fast."
         }
       ],
-      "catches": [],
+      "catches": [
+        {
+          "whaleCount": null,
+          "oilBarrels": 58,
+          "blubberWeight": null,
+          "boneWeight": null,
+          "notes": "Stowed in the fore hold."
+        }
+      ],
       "crewEvents": []
     },
     {
       "date": "1843-06-19",
-      "time": "16:30",
-      "latitude": null,
-      "longitude": null,
+      "time": "13:00",
+      "latitude": 53,
+      "longitude": -149.65,
       "weather": "thick with rain",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Spoke the Ship Liverpool Packet of New Bedford.",
+      "notes": "Stowed 30 barrels in the fore hold.",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Did not get fast."
+          "notes": "Saw whale lowered and chased did not get fast."
         }
       ],
       "catches": [],
@@ -3943,8 +3973,8 @@
     {
       "date": "1843-06-20",
       "time": "19:00",
-      "latitude": 50.04,
-      "longitude": null,
+      "latitude": 50.067,
+      "longitude": -149.25,
       "weather": null,
       "course": null,
       "windDirection": "south",
@@ -3955,7 +3985,7 @@
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Sunk."
+          "notes": "Lowered for whale struck."
         }
       ],
       "catches": [],
@@ -3971,8 +4001,8 @@
     {
       "date": "1843-06-21",
       "time": "15:00",
-      "latitude": 55.06,
-      "longitude": -151.46,
+      "latitude": 55.1,
+      "longitude": -151.767,
       "weather": null,
       "course": null,
       "windDirection": "SSE",
@@ -3983,7 +4013,7 @@
           "species": "Humpback",
           "count": 1,
           "caught": false,
-          "notes": "Did not succeed in getting fast."
+          "notes": "Saw Humpbacks."
         }
       ],
       "catches": [],
@@ -3992,19 +4022,19 @@
     {
       "date": "1843-06-22",
       "time": "14:00",
-      "latitude": 55.12,
-      "longitude": -151.46,
+      "latitude": 55.2,
+      "longitude": -151.767,
       "weather": null,
-      "course": null,
+      "course": "NNW",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Spoke the Ship Ney of New Bedford.",
+      "notes": "Commenced cutting the body.",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": null
+          "notes": "Lowered for whale struck turned him up and took him to the ship."
         }
       ],
       "catches": [
@@ -4013,7 +4043,7 @@
           "oilBarrels": 700,
           "blubberWeight": null,
           "boneWeight": null,
-          "notes": "Sperm whale."
+          "notes": "Took in the head throat and lips."
         }
       ],
       "crewEvents": []
@@ -4021,11 +4051,11 @@
     {
       "date": "1843-06-23",
       "time": "16:00",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 55.2,
+      "longitude": -151.767,
       "weather": "light airs and calms",
       "course": null,
-      "windDirection": null,
+      "windDirection": "NW",
       "temperature": null,
       "notes": "Stowed 40 barrels in the fore hold.",
       "whaleSightings": [
@@ -4033,7 +4063,7 @@
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Sunk."
+          "notes": "Lowered for whale struck turned him up and he sunk."
         }
       ],
       "catches": [],
@@ -4042,7 +4072,7 @@
     {
       "date": "1843-06-24",
       "time": "11:00",
-      "latitude": 53.87,
+      "latitude": 53.867,
       "longitude": -149.1,
       "weather": null,
       "course": null,
@@ -4052,9 +4082,9 @@
       "whaleSightings": [
         {
           "species": null,
-          "count": null,
+          "count": 1,
           "caught": false,
-          "notes": "Saw several whales."
+          "notes": "Saw several whale going quick."
         }
       ],
       "catches": [],
@@ -4063,19 +4093,19 @@
     {
       "date": "1843-06-25",
       "time": "16:00",
-      "latitude": 54.1,
+      "latitude": 54.167,
       "longitude": -149.25,
       "weather": null,
       "course": "NNE",
       "windDirection": "west",
       "temperature": null,
-      "notes": "Took a dead whale to the ship.",
+      "notes": "Lowered and took a dead whale to the ship.",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": null
+          "notes": "Lowered for whale did not get fast."
         }
       ],
       "catches": [],
@@ -4084,21 +4114,28 @@
     {
       "date": "1843-06-26",
       "time": "17:00",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 53,
+      "longitude": -150.633,
       "weather": null,
       "course": null,
       "windDirection": null,
       "temperature": null,
       "notes": "Finished cutting.",
-      "whaleSightings": [],
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": 1,
+          "caught": false,
+          "notes": "Saw a dead whale."
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
     {
       "date": "1843-06-27",
       "time": null,
-      "latitude": 53.83,
+      "latitude": 53.833,
       "longitude": -149.25,
       "weather": "hard gales with rain",
       "course": null,
@@ -4112,8 +4149,8 @@
     {
       "date": "1843-06-28",
       "time": "04:00",
-      "latitude": 54.57,
-      "longitude": -148.37,
+      "latitude": 54.567,
+      "longitude": -148.367,
       "weather": null,
       "course": null,
       "windDirection": "west",
@@ -4133,8 +4170,8 @@
     {
       "date": "1843-06-29",
       "time": null,
-      "latitude": 55.28,
-      "longitude": -148.07,
+      "latitude": 55.283,
+      "longitude": -148.067,
       "weather": null,
       "course": "NNW",
       "windDirection": "east",
@@ -4142,15 +4179,22 @@
       "notes": "Two men sick.",
       "whaleSightings": [],
       "catches": [],
-      "crewEvents": []
+      "crewEvents": [
+        {
+          "crewMemberName": null,
+          "role": null,
+          "eventType": "illness",
+          "description": "Two men sick."
+        }
+      ]
     },
     {
       "date": "1843-06-30",
       "time": "16:00",
-      "latitude": 55.92,
+      "latitude": 55.917,
       "longitude": -148,
-      "weather": "light breezes from the east",
-      "course": "northward",
+      "weather": null,
+      "course": null,
       "windDirection": null,
       "temperature": null,
       "notes": "Saw a dead whale.",
@@ -4168,11 +4212,11 @@
     {
       "date": "1843-07-01",
       "time": "14:00",
-      "latitude": 54.13,
-      "longitude": -150.33,
+      "latitude": 54.133,
+      "longitude": -150.333,
       "weather": null,
       "course": "SSW",
-      "windDirection": null,
+      "windDirection": "N",
       "temperature": null,
       "notes": null,
       "whaleSightings": [
@@ -4180,7 +4224,7 @@
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Did not get fast."
+          "notes": "Saw whale lowered did not get fast."
         }
       ],
       "catches": [],
@@ -4189,19 +4233,19 @@
     {
       "date": "1843-07-02",
       "time": null,
-      "latitude": 53.67,
-      "longitude": -151.12,
+      "latitude": 53.667,
+      "longitude": -151.117,
       "weather": null,
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": null,
+      "notes": "Spoke the Barque Franklin of Sagharbor.",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Saw one whale."
+          "notes": "Saw one whale going fast."
         }
       ],
       "catches": [],
@@ -4211,10 +4255,10 @@
       "date": "1843-07-03",
       "time": "14:00",
       "latitude": 54.9,
-      "longitude": -151.17,
+      "longitude": -151.167,
       "weather": null,
       "course": null,
-      "windDirection": null,
+      "windDirection": "west",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -4224,11 +4268,11 @@
     {
       "date": "1843-07-04",
       "time": "19:00",
-      "latitude": 55.08,
-      "longitude": -151.08,
+      "latitude": 55.083,
+      "longitude": -151.083,
       "weather": null,
       "course": "NNW",
-      "windDirection": null,
+      "windDirection": "west",
       "temperature": null,
       "notes": null,
       "whaleSightings": [
@@ -4236,7 +4280,7 @@
           "species": null,
           "count": 2,
           "caught": false,
-          "notes": "Did not get fast."
+          "notes": "Lowered for two whale did not get fast."
         }
       ],
       "catches": [],
@@ -4245,13 +4289,13 @@
     {
       "date": "1843-07-05",
       "time": "17:00",
-      "latitude": 53.67,
+      "latitude": 53.667,
       "longitude": -150.55,
       "weather": null,
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": null,
+      "notes": "Spoke the Ship Thomas Williams of Stonington.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -4259,8 +4303,8 @@
     {
       "date": "1843-07-06",
       "time": "07:00",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 53.967,
+      "longitude": -150.55,
       "weather": null,
       "course": null,
       "windDirection": "SW",
@@ -4273,8 +4317,8 @@
     {
       "date": "1843-07-07",
       "time": "16:30",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 53.05,
+      "longitude": -150.667,
       "weather": "thick fog",
       "course": null,
       "windDirection": null,
@@ -4287,11 +4331,11 @@
     {
       "date": "1843-07-08",
       "time": null,
-      "latitude": 53.08,
-      "longitude": -150.67,
+      "latitude": 53.083,
+      "longitude": -150.667,
       "weather": null,
       "course": null,
-      "windDirection": null,
+      "windDirection": "west",
       "temperature": null,
       "notes": "Employed cutting.",
       "whaleSightings": [],
@@ -4302,20 +4346,13 @@
       "date": "1843-07-09",
       "time": "13:00",
       "latitude": 53,
-      "longitude": -150.58,
+      "longitude": -150.583,
       "weather": "light breezes and fog",
       "course": null,
-      "windDirection": null,
+      "windDirection": "SE",
       "temperature": null,
-      "notes": "Saw 10 whales.",
-      "whaleSightings": [
-        {
-          "species": null,
-          "count": 10,
-          "caught": false,
-          "notes": "Came on thick fog."
-        }
-      ],
+      "notes": "Saw 10 whales came on thick fog.",
+      "whaleSightings": [],
       "catches": [],
       "crewEvents": []
     },
@@ -4323,10 +4360,10 @@
       "date": "1843-07-10",
       "time": "17:00",
       "latitude": 53,
-      "longitude": -150.63,
+      "longitude": -150.633,
       "weather": null,
       "course": null,
-      "windDirection": null,
+      "windDirection": "SE",
       "temperature": null,
       "notes": "Employed stowing in the fore hold.",
       "whaleSightings": [],
@@ -4336,7 +4373,7 @@
     {
       "date": "1843-07-11",
       "time": null,
-      "latitude": 52.97,
+      "latitude": 52.967,
       "longitude": -149.65,
       "weather": null,
       "course": null,
@@ -4350,8 +4387,8 @@
     {
       "date": "1843-07-12",
       "time": "11:00",
-      "latitude": 53.1,
-      "longitude": -149.48,
+      "latitude": 53.167,
+      "longitude": -149.483,
       "weather": null,
       "course": null,
       "windDirection": null,
@@ -4384,7 +4421,7 @@
       "course": null,
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Took the whale to the ship.",
+      "notes": "Took the whale to the ship. Commenced cutting at 5 PM.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -4399,13 +4436,13 @@
     {
       "date": "1843-07-15",
       "time": "15:00",
-      "latitude": 53.33,
+      "latitude": 53.333,
       "longitude": 0,
       "weather": "light breezes with fog and rain",
       "course": null,
       "windDirection": "E",
       "temperature": null,
-      "notes": "Saw whale, lost two lances and four harpoons.",
+      "notes": "Saw whale at 7:30 AM, lost two lances and four harpoons.",
       "whaleSightings": [
         {
           "species": null,
@@ -4427,10 +4464,10 @@
     {
       "date": "1843-07-16",
       "time": "05:00",
-      "latitude": 52.38,
+      "latitude": 52,
       "longitude": 0,
       "weather": "light winds and calms",
-      "course": "chase of whale",
+      "course": "W by S",
       "windDirection": null,
       "temperature": null,
       "notes": "Saw two whales at sunset.",
@@ -4448,13 +4485,13 @@
     {
       "date": "1843-07-17",
       "time": "13:00",
-      "latitude": null,
-      "longitude": null,
+      "latitude": 0,
+      "longitude": 0,
       "weather": "light breezes",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Lowered for whale, struck but got foul line.",
+      "notes": "Lowered for whale, struck but had to cut off foul line.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -4463,7 +4500,7 @@
       "date": "1843-07-18",
       "time": "18:00",
       "latitude": 52.5,
-      "longitude": 148.68,
+      "longitude": 148.683,
       "weather": "fresh gales from the WSW",
       "course": null,
       "windDirection": "WSW",
@@ -4484,8 +4521,8 @@
     {
       "date": "1843-07-19",
       "time": "18:00",
-      "latitude": 52.83,
-      "longitude": 148.98,
+      "latitude": 52.833,
+      "longitude": 148.983,
       "weather": "fresh gales from the S",
       "course": null,
       "windDirection": "S",
@@ -4499,7 +4536,7 @@
       "date": "1843-07-20",
       "time": "18:00",
       "latitude": 52.5,
-      "longitude": 155.34,
+      "longitude": 0,
       "weather": "fresh breezes from the SW",
       "course": null,
       "windDirection": "SW",
@@ -4512,7 +4549,7 @@
     {
       "date": "1843-07-21",
       "time": "17:00",
-      "latitude": 52.98,
+      "latitude": 52.983,
       "longitude": 149.15,
       "weather": "fresh breezes from the South",
       "course": null,
@@ -4542,9 +4579,9 @@
       "date": "1843-07-22",
       "time": "18:00",
       "latitude": 52.9,
-      "longitude": 150.93,
+      "longitude": 150.933,
       "weather": "light breezes and fog",
-      "course": "steering into the SW",
+      "course": "SW",
       "windDirection": "NNW",
       "temperature": null,
       "notes": "Spoke the Ship Erie of Fair Haven.",
@@ -4554,11 +4591,11 @@
     },
     {
       "date": "1843-07-23",
-      "time": "04:30",
-      "latitude": 52.38,
-      "longitude": 151.57,
+      "time": "16:30",
+      "latitude": 52.383,
+      "longitude": 151.567,
       "weather": "fresh breezes from the NNW",
-      "course": "steering W by S",
+      "course": "W by S",
       "windDirection": "NNW",
       "temperature": null,
       "notes": "Lowered for whale, struck but line parted.",
@@ -4576,8 +4613,8 @@
     {
       "date": "1843-07-24",
       "time": null,
-      "latitude": null,
-      "longitude": null,
+      "latitude": 0,
+      "longitude": 0,
       "weather": "blowing a gale from the south",
       "course": null,
       "windDirection": "S",
@@ -4590,7 +4627,7 @@
     {
       "date": "1843-07-25",
       "time": "07:00",
-      "latitude": 52.67,
+      "latitude": 52.667,
       "longitude": 152,
       "weather": "hard gales from the south",
       "course": null,
@@ -4604,7 +4641,7 @@
     {
       "date": "1843-07-26",
       "time": null,
-      "latitude": 52.58,
+      "latitude": 52.583,
       "longitude": 152.8,
       "weather": "fresh breezes from the SW with fog and rain",
       "course": null,
@@ -4619,7 +4656,7 @@
       "date": "1843-07-27",
       "time": "14:30",
       "latitude": 52.5,
-      "longitude": 152.87,
+      "longitude": 152.867,
       "weather": "fine breezes and fog",
       "course": null,
       "windDirection": null,
@@ -4632,8 +4669,8 @@
     {
       "date": "1843-07-28",
       "time": null,
-      "latitude": 52.53,
-      "longitude": 152.67,
+      "latitude": 52.533,
+      "longitude": 152.667,
       "weather": "light breezes",
       "course": null,
       "windDirection": null,
@@ -4646,8 +4683,8 @@
     {
       "date": "1843-07-29",
       "time": null,
-      "latitude": 52.67,
-      "longitude": 156.33,
+      "latitude": 52.667,
+      "longitude": 156.333,
       "weather": "calms with fog",
       "course": null,
       "windDirection": null,
@@ -4660,13 +4697,13 @@
     {
       "date": "1843-07-30",
       "time": null,
-      "latitude": null,
-      "longitude": null,
+      "latitude": 0,
+      "longitude": 0,
       "weather": "calms and thick fog",
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Employed breaking out for stowing and boiling.",
+      "notes": "Employed stowing and boiling.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -4674,8 +4711,8 @@
     {
       "date": "1843-07-31",
       "time": "16:00",
-      "latitude": 52.67,
-      "longitude": 151.73,
+      "latitude": 52.667,
+      "longitude": 151.733,
       "weather": "fresh breezes from the SE with rain",
       "course": null,
       "windDirection": "SE",
@@ -4688,7 +4725,7 @@
     {
       "date": "1843-08-01",
       "time": null,
-      "latitude": 52.63,
+      "latitude": 52.633,
       "longitude": 152,
       "weather": "light breezes from the east",
       "course": null,
@@ -4705,10 +4742,10 @@
       "latitude": 52.75,
       "longitude": 153,
       "weather": "light breezes from the NE",
-      "course": "steering W by south",
+      "course": "W by S",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Saw whales going quick.",
+      "notes": "Saw whales going quick to the westward.",
       "whaleSightings": [
         {
           "species": null,
@@ -4724,18 +4761,18 @@
       "date": "1843-08-03",
       "time": "15:00",
       "latitude": 52.5,
-      "longitude": 155.33,
+      "longitude": 155.333,
       "weather": "hard gales from the NE",
-      "course": "steering WSW",
+      "course": "WSW",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Saw whales, brought the ship too.",
+      "notes": "Saw whales around the ship.",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Saw a sail standing to the SW."
+          "notes": "Saw several other whales in sight."
         }
       ],
       "catches": [],
@@ -4752,24 +4789,16 @@
       "temperature": null,
       "notes": "Finished cutting the whale.",
       "whaleSightings": [],
-      "catches": [
-        {
-          "whaleCount": null,
-          "oilBarrels": null,
-          "blubberWeight": null,
-          "boneWeight": null,
-          "notes": "Proved to be very poor, very little oil."
-        }
-      ],
+      "catches": [],
       "crewEvents": []
     },
     {
       "date": "1843-08-05",
       "time": "18:30",
-      "latitude": 52.22,
+      "latitude": 52.217,
       "longitude": 156.5,
       "weather": "fine breezes from the north",
-      "course": null,
+      "course": "E",
       "windDirection": "N",
       "temperature": null,
       "notes": "Lowered for whale but he ran to windward.",
@@ -4781,7 +4810,7 @@
       "date": "1843-08-06",
       "time": "16:30",
       "latitude": 32.5,
-      "longitude": 156.87,
+      "longitude": 156.867,
       "weather": "fine breezes from the WSW",
       "course": null,
       "windDirection": "WSW",
@@ -4792,7 +4821,7 @@
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": null
+          "notes": "Did not get fast."
         }
       ],
       "catches": [],
@@ -4802,7 +4831,7 @@
       "date": "1843-08-07",
       "time": null,
       "latitude": 52.4,
-      "longitude": 156.93,
+      "longitude": 156.933,
       "weather": "hard gales from the SE",
       "course": null,
       "windDirection": "SE",
@@ -4815,15 +4844,15 @@
           "crewMemberName": null,
           "role": null,
           "eventType": "other",
-          "description": "10 whales in sight."
+          "description": "Employed cleaning bone."
         }
       ]
     },
     {
       "date": "1843-08-08",
       "time": null,
-      "latitude": null,
-      "longitude": null,
+      "latitude": 0,
+      "longitude": 0,
       "weather": "hard gales from the ESE",
       "course": null,
       "windDirection": "ESE",
@@ -4836,9 +4865,9 @@
     {
       "date": "1843-08-09",
       "time": null,
-      "latitude": 52.67,
-      "longitude": 157.77,
-      "weather": "fresh gales from the SE",
+      "latitude": 52.667,
+      "longitude": 157.767,
+      "weather": "fresh gales from the SE with fog",
       "course": null,
       "windDirection": "SE",
       "temperature": null,
@@ -4850,8 +4879,8 @@
     {
       "date": "1843-08-10",
       "time": null,
-      "latitude": 52.73,
-      "longitude": 157.83,
+      "latitude": 52.733,
+      "longitude": 157.833,
       "weather": "light breezes from the SE with fog",
       "course": null,
       "windDirection": "SE",
@@ -4864,7 +4893,7 @@
     {
       "date": "1843-08-11",
       "time": "16:00",
-      "latitude": 52.87,
+      "latitude": 52.867,
       "longitude": 158.1,
       "weather": "light breezes from the S with fog",
       "course": null,
@@ -4885,10 +4914,10 @@
     {
       "date": "1843-08-12",
       "time": null,
-      "latitude": 52.67,
-      "longitude": 156.33,
+      "latitude": 52.667,
+      "longitude": 156.333,
       "weather": "fresh breezes from the west",
-      "course": null,
+      "course": "E",
       "windDirection": "W",
       "temperature": null,
       "notes": "Standing to the east under all sail.",
@@ -4906,10 +4935,10 @@
     {
       "date": "1843-08-13",
       "time": null,
-      "latitude": 52.83,
-      "longitude": 157,
+      "latitude": 52.833,
+      "longitude": 0,
       "weather": "fresh breezes from the W",
-      "course": "steering N",
+      "course": "N",
       "windDirection": "W",
       "temperature": null,
       "notes": "Saw sulfur bottoms.",
@@ -4933,13 +4962,13 @@
       "course": null,
       "windDirection": "west",
       "temperature": null,
-      "notes": "Saw whale chased did not get fast.",
+      "notes": "Saw whale chased did not get fast",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": "Struck and took him to the ship."
+          "notes": "Struck and took him to the ship"
         }
       ],
       "catches": [],
@@ -4954,13 +4983,13 @@
       "course": null,
       "windDirection": "west",
       "temperature": null,
-      "notes": "Employed cutting the whale.",
+      "notes": "Employed cutting the whale",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": "Struck and took him to the ship."
+          "notes": "Lowered struck turned him up"
         }
       ],
       "catches": [],
@@ -4970,12 +4999,12 @@
       "date": "1843-08-16",
       "time": null,
       "latitude": 52.833,
-      "longitude": -56.383,
+      "longitude": -54,
       "weather": "fine breezes from the SE",
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Employed cutting.",
+      "notes": "Employed cutting",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -4984,12 +5013,12 @@
       "date": "1843-08-17",
       "time": null,
       "latitude": 52.833,
-      "longitude": -56.017,
+      "longitude": -152.017,
       "weather": "hard gales from the SW",
       "course": null,
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Employed stowing and boiling.",
+      "notes": "Employed stowing and boiling",
       "whaleSightings": [
         {
           "species": "right whale",
@@ -5004,13 +5033,13 @@
     {
       "date": "1843-08-18",
       "time": "07:30",
-      "latitude": 52.767,
-      "longitude": -155.6,
+      "latitude": 52.833,
+      "longitude": -155,
       "weather": "fresh gales from the SE",
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Employed boiling and stowing.",
+      "notes": "Employed boiling and stowing",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5024,8 +5053,15 @@
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Struck the whale.",
-      "whaleSightings": [],
+      "notes": "Struck the whale, lost sight of the ship for one hour",
+      "whaleSightings": [
+        {
+          "species": null,
+          "count": 1,
+          "caught": false,
+          "notes": "Saw whales going quick"
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -5038,13 +5074,13 @@
       "course": null,
       "windDirection": "west",
       "temperature": null,
-      "notes": "Lowered for whale struck starboard boat got stow.",
+      "notes": "Lowered for whale, struck starboard boat got stow",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Turned him up and he sunk."
+          "notes": "Turned him up and he sunk"
         }
       ],
       "catches": [],
@@ -5059,11 +5095,17 @@
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Several right whales in sight.",
+      "notes": "Several right whales in sight",
       "whaleSightings": [
         {
           "species": "right whale",
           "count": 5,
+          "caught": false,
+          "notes": null
+        },
+        {
+          "species": "finback",
+          "count": 3,
           "caught": false,
           "notes": null
         }
@@ -5080,13 +5122,13 @@
       "course": null,
       "windDirection": "south",
       "temperature": null,
-      "notes": "Saw one whale.",
+      "notes": "Saw one whale, had to cut from him lost half a line",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": false,
-          "notes": "Struck the whale ran to windward."
+          "notes": "Struck the whale"
         }
       ],
       "catches": [],
@@ -5101,7 +5143,7 @@
       "course": null,
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Several whales in sight.",
+      "notes": "Several whales in sight",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5115,7 +5157,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Struck turned him up.",
+      "notes": "Struck turned him up",
       "whaleSightings": [
         {
           "species": null,
@@ -5136,7 +5178,7 @@
       "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Saw whale at sunset.",
+      "notes": "Saw whale at sunset",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5150,7 +5192,7 @@
       "course": null,
       "windDirection": "S",
       "temperature": null,
-      "notes": "Lowered for whale struck turned him up.",
+      "notes": "Lowered for whale, struck turned him up",
       "whaleSightings": [
         {
           "species": null,
@@ -5167,11 +5209,11 @@
       "time": null,
       "latitude": 53.083,
       "longitude": -154.25,
-      "weather": "fresh breezes from the south",
+      "weather": "fresh breezes from the south with fog",
       "course": null,
       "windDirection": "south",
       "temperature": null,
-      "notes": "Finished cutting the whale.",
+      "notes": "Finished cutting the whale",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5181,11 +5223,11 @@
       "time": null,
       "latitude": 62.717,
       "longitude": -153.367,
-      "weather": "fresh gales from the S",
+      "weather": "fresh gales from the S with fog",
       "course": null,
       "windDirection": "S",
       "temperature": null,
-      "notes": "Employed stowing in the steerage.",
+      "notes": "Employed stowing in the steerage",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5199,7 +5241,7 @@
       "course": null,
       "windDirection": "S",
       "temperature": null,
-      "notes": "Employed stowing between decks.",
+      "notes": "Employed boiling",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5209,11 +5251,11 @@
       "time": "16:30",
       "latitude": 52.583,
       "longitude": -152.783,
-      "weather": "hard gales from the S",
+      "weather": "hard gales from the S with fog",
       "course": null,
       "windDirection": "S",
       "temperature": null,
-      "notes": "Saw one right whale.",
+      "notes": "Saw one right whale",
       "whaleSightings": [
         {
           "species": "right whale",
@@ -5276,7 +5318,7 @@
       "course": "SSE",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Under all sail. Employed washing bone.",
+      "notes": "Came on to blow a gale from the east.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5290,13 +5332,13 @@
       "course": null,
       "windDirection": "E",
       "temperature": null,
-      "notes": "Spoke the Ship Julyan of New Bedford.",
+      "notes": "Saw whale lowered, struck whale",
       "whaleSightings": [
         {
           "species": null,
           "count": 1,
           "caught": true,
-          "notes": "Struck whale and turned him up."
+          "notes": "Took him to the ship"
         }
       ],
       "catches": [],
@@ -5309,9 +5351,9 @@
       "longitude": -150,
       "weather": "fine breezes from the west",
       "course": null,
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
-      "notes": "Employed cutting in the whale.",
+      "notes": "Saw one right whale.",
       "whaleSightings": [
         {
           "species": "right whale",
@@ -5330,9 +5372,9 @@
       "longitude": -149.55,
       "weather": "light breezes from the west",
       "course": null,
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
-      "notes": "Lowered for whale did not get fast.",
+      "notes": "Lowered for whale, did not get fast.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5356,11 +5398,11 @@
       "time": null,
       "latitude": 49.4,
       "longitude": -148.833,
-      "weather": "hard gales from the SW",
+      "weather": "hard gales from the SW with heavy rain squalls",
       "course": null,
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Lying too under a close reefed main topsail.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5377,10 +5419,10 @@
       "notes": "Saw blackfish.",
       "whaleSightings": [
         {
-          "species": null,
+          "species": "blackfish",
           "count": 1,
-          "caught": true,
-          "notes": "Lowered struck iron."
+          "caught": false,
+          "notes": "Lowered struck iron"
         }
       ],
       "catches": [],
@@ -5416,7 +5458,7 @@
     },
     {
       "date": "1843-09-12",
-      "time": "03:00",
+      "time": null,
       "latitude": null,
       "longitude": null,
       "weather": "strong breezes from SW",
@@ -5437,7 +5479,7 @@
       "course": null,
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Sent down the main topgallant yard.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5462,7 +5504,7 @@
       "latitude": null,
       "longitude": null,
       "weather": "gales from the west",
-      "course": null,
+      "course": "S by W",
       "windDirection": "west",
       "temperature": null,
       "notes": "Employed bending sails.",
@@ -5479,7 +5521,7 @@
       "course": null,
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Employed mending sails and sending the main topgallant yard aloft.",
+      "notes": "Employed mending sails and sending the main topgalant yard aloft.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5563,7 +5605,7 @@
       "course": "S",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Employed sending fore and mizzen topgallant yards aloft.",
+      "notes": "Employed sending fore and mizzen topgalant yards aloft.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5587,7 +5629,7 @@
       "time": null,
       "latitude": 22.967,
       "longitude": -153.167,
-      "weather": "fresh breezes from the ENE, squalls",
+      "weather": "fresh breezes with squalls",
       "course": "SW by S",
       "windDirection": "ENE",
       "temperature": null,
@@ -5605,7 +5647,7 @@
       "course": "SW by S",
       "windDirection": "ENE",
       "temperature": null,
-      "notes": "At 10 AM made the Island of Owhyhee. At 11:30 made the Island of Mowee bearing west 40 miles distant.",
+      "notes": "Made the Island of Owhyhee. At 11:30 made the Island of Mowee bearing west 40 miles distant.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5613,13 +5655,13 @@
     {
       "date": "1843-09-26",
       "time": "16:00",
-      "latitude": null,
-      "longitude": null,
-      "weather": "fresh breezes from ENE, heavy squalls",
+      "latitude": 20.5,
+      "longitude": -156.5,
+      "weather": "fresh breezes with heavy squalls",
       "course": null,
       "windDirection": "ENE",
       "temperature": null,
-      "notes": "At 4 PM spoke the Ship George and Susan of New Bedford. 23 months, 1300 bbls of sperm.",
+      "notes": "Spoke the Ship George and Susan of New Bedford. 23 months, 1300 bbls of sperm. Brought the ship too under double reefed topsails for the night.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5633,7 +5675,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Laying at anchor. Employed scraping ship cooper setting up shooks for water. At 8 AM one watch on shore. Employed painting.",
+      "notes": "Laying at anchor. Employed scraping ship cooper setting up shooks for water. One watch on shore. Employed painting.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5675,7 +5717,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "All hands on board. Employ stowing water and painting ship.",
+      "notes": "All hands on board. Employed stowing water and painting ship.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5689,7 +5731,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Laying at anchor. One watch on shore. Latter Part employed stowing water.",
+      "notes": "Laying at anchor. One watch on shore. Latter part employed stowing water.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5801,7 +5843,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "At 7 AM hove short. At 9 had the ship under way. All sail out steering off SW.",
+      "notes": "All hands on board. Hove short. At 9 had the ship under way. All sail out steering off SW.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5857,7 +5899,7 @@
       "course": "SSE",
       "windDirection": "ENE",
       "temperature": null,
-      "notes": "Employed setting up rigging.",
+      "notes": "The Ship Superior in sight. Employed setting up rigging.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5879,7 +5921,7 @@
     {
       "date": "1843-10-15",
       "time": null,
-      "latitude": -0.143,
+      "latitude": 0.143,
       "longitude": null,
       "weather": null,
       "course": "SSE",
@@ -5902,25 +5944,32 @@
       "time": null,
       "latitude": 7.133,
       "longitude": null,
-      "weather": "fresh breezes from the NE with rain squalls",
+      "weather": "fresh breezes with rain squalls",
       "course": null,
       "windDirection": "NE",
       "temperature": null,
-      "notes": "At 7 PM a squall struck the ship and carried away the jib boom. Employed fitting the boom.",
+      "notes": "At 7 PM a squall struck the ship and carried away the jib boom. Middle part fresh gales with heavy squalls.",
       "whaleSightings": [],
       "catches": [],
-      "crewEvents": []
+      "crewEvents": [
+        {
+          "crewMemberName": null,
+          "role": null,
+          "eventType": "other",
+          "description": "Took the spare main topsail yard for a jib boom. Carpenter employed fitting the boom."
+        }
+      ]
     },
     {
       "date": "1843-10-17",
       "time": null,
       "latitude": 6.283,
       "longitude": null,
-      "weather": "fresh breezes from the east with hard rain squalls",
+      "weather": "fresh breezes with hard rain squalls",
       "course": null,
       "windDirection": "E",
       "temperature": null,
-      "notes": "One man sick.",
+      "notes": "Employed sending out the jib boom and refitting rigging. One man sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -5937,11 +5986,11 @@
       "time": null,
       "latitude": 5.183,
       "longitude": null,
-      "weather": "fresh breezes from the east with squalls",
+      "weather": "fresh breezes with squalls",
       "course": null,
-      "windDirection": "E",
+      "windDirection": null,
       "temperature": null,
-      "notes": null,
+      "notes": "Employed sending out the flying jib boom and refitting the rigging.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -5974,9 +6023,9 @@
       "longitude": -155.35,
       "weather": "fine breezes from the east",
       "course": null,
-      "windDirection": "E",
+      "windDirection": null,
       "temperature": null,
-      "notes": "Four men sick.",
+      "notes": "Employed in rigging. Four men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6013,7 +6062,7 @@
       "date": "1843-10-22",
       "time": null,
       "latitude": null,
-      "longitude": -155.85,
+      "longitude": null,
       "weather": "fine breezes from the east",
       "course": "S to SSE",
       "windDirection": "E",
@@ -6035,7 +6084,7 @@
       "time": null,
       "latitude": -2.25,
       "longitude": -157.117,
-      "weather": null,
+      "weather": "fine breezes from the east",
       "course": "SSE",
       "windDirection": "E",
       "temperature": null,
@@ -6056,19 +6105,12 @@
       "time": "15:00",
       "latitude": -3.45,
       "longitude": -156.65,
-      "weather": "fine breezes from east",
+      "weather": "fine breezes",
       "course": "SSE",
       "windDirection": "E",
       "temperature": null,
-      "notes": "At 3 PM saw sperm whales lowered, went on and missed, gave chase without success. Employed mending sails.",
-      "whaleSightings": [
-        {
-          "species": "sperm whale",
-          "count": 1,
-          "caught": false,
-          "notes": "Gave chase without success."
-        }
-      ],
+      "notes": "Saw sperm whales lowered, went on and missed, gave chase without success.",
+      "whaleSightings": [],
       "catches": [],
       "crewEvents": [
         {
@@ -6088,7 +6130,7 @@
       "course": "southward",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Employed repairing sails. One sail in sight.",
+      "notes": "Employed repairing sails. Three men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6130,7 +6172,7 @@
       "course": "SE by S",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "At 2:30 PM saw the Island of Sandy Island, bearing SE by E, 15 miles distant.",
+      "notes": "Saw the Island of Sandy Island, bearing SE by E, 15 miles distant.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6190,10 +6232,10 @@
       "latitude": null,
       "longitude": null,
       "weather": null,
-      "course": "SE by S",
-      "windDirection": "E",
+      "course": null,
+      "windDirection": null,
       "temperature": null,
-      "notes": "Four men sick.",
+      "notes": "Employed repairing sails. Four men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6277,7 +6319,7 @@
       "course": "S by W",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Made the Island of Wateco, 35 miles distant. 4 men sick.",
+      "notes": "Made the Island of Wateco. 4 men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6319,7 +6361,7 @@
       "course": "SW",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Saw the Island of Mangea, 30 miles distant. 4 men sick.",
+      "notes": "Saw the Island of Mangea. 4 men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6340,7 +6382,7 @@
       "course": "in for the land",
       "windDirection": "SSE",
       "temperature": null,
-      "notes": "Five canoes came off to the ship with fruit and war clubs. 4 men sick.",
+      "notes": "Five canoes came off to the ship. 4 men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6463,10 +6505,10 @@
       "latitude": -31.117,
       "longitude": -163.733,
       "weather": "fine breezes from NE",
-      "course": null,
+      "course": "S",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Spoke the Ship Magnolia of New Bedford, 2300 barrels. 4 men sick.",
+      "notes": "Spoke the Ship Magnolia of New Bedford. 4 men sick.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": [
@@ -6538,17 +6580,17 @@
       "time": "15:00",
       "latitude": -36.1,
       "longitude": -162.733,
-      "weather": "light winds from the west",
+      "weather": "light winds from west",
       "course": null,
       "windDirection": "W",
       "temperature": null,
-      "notes": "Saw one right whale but did not get fast. 4 men sick.",
+      "notes": "Saw one right whale. Did not get fast. 4 men sick.",
       "whaleSightings": [
         {
           "species": "Right whale",
           "count": 1,
           "caught": false,
-          "notes": "Did not get fast."
+          "notes": "Saw one right whale going quick."
         }
       ],
       "catches": [],
@@ -6563,18 +6605,18 @@
     },
     {
       "date": "1843-11-16",
-      "time": "14:00",
+      "time": "15:00",
       "latitude": -35.933,
       "longitude": -161.333,
-      "weather": "light breezes from the N",
+      "weather": "light breezes from N",
       "course": "SE",
       "windDirection": "N",
       "temperature": null,
-      "notes": "Saw four right whales. Lowered and struck one. 4 men sick.",
+      "notes": "Saw four right whales. Struck and took one to the ship.",
       "whaleSightings": [
         {
           "species": "Right whale",
-          "count": 1,
+          "count": 4,
           "caught": true,
           "notes": null
         }
@@ -6588,14 +6630,7 @@
           "notes": null
         }
       ],
-      "crewEvents": [
-        {
-          "crewMemberName": null,
-          "role": null,
-          "eventType": "illness",
-          "description": "4 men sick."
-        }
-      ]
+      "crewEvents": []
     },
     {
       "date": "1843-11-17",
@@ -6620,17 +6655,9 @@
       "course": "SE",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Finished boiling. Saw a dead whale SE of the ship.",
+      "notes": "Saw a dead whale SE of the ship.",
       "whaleSightings": [],
-      "catches": [
-        {
-          "whaleCount": 1,
-          "oilBarrels": null,
-          "blubberWeight": null,
-          "boneWeight": null,
-          "notes": "Cut him in and commenced boiling."
-        }
-      ],
+      "catches": [],
       "crewEvents": []
     },
     {
@@ -6642,7 +6669,7 @@
       "course": null,
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Lowered for whale but did not succeed. Employed boiling.",
+      "notes": "Lowered for whale chase but did not succeed.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -6677,17 +6704,10 @@
       "course": null,
       "windDirection": "NNW",
       "temperature": null,
-      "notes": "Spoke the Ship Milton of New Bedford, 2300 barrels. 4 men sick.",
+      "notes": "Spoke the Ship Milton of New Bedford.",
       "whaleSightings": [],
       "catches": [],
-      "crewEvents": [
-        {
-          "crewMemberName": null,
-          "role": null,
-          "eventType": "illness",
-          "description": "4 men sick."
-        }
-      ]
+      "crewEvents": []
     },
     {
       "date": "1843-11-22",
@@ -6712,10 +6732,10 @@
       "course": null,
       "windDirection": "N",
       "temperature": null,
-      "notes": "Saw whale, lowered, struck and took him to the ship. Employed boiling.",
+      "notes": "Saw whale, struck and took him to the ship.",
       "whaleSightings": [
         {
-          "species": "Whale",
+          "species": null,
           "count": 1,
           "caught": true,
           "notes": null
@@ -6737,11 +6757,11 @@
       "time": "13:00",
       "latitude": -36.833,
       "longitude": -157.05,
-      "weather": "light breezes from NNW heading NE",
-      "course": null,
+      "weather": "light breezes from NNW",
+      "course": "NE",
       "windDirection": "NNW",
       "temperature": null,
-      "notes": "Lowered for whale but did not get fast. Employed boiling.",
+      "notes": "Lowered for whale chase until six PM, without getting fast.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -6964,27 +6984,13 @@
       "crewEvents": []
     },
     {
-      "date": "1843-12-07",
-      "time": null,
-      "latitude": null,
-      "longitude": null,
-      "weather": null,
-      "course": null,
-      "windDirection": null,
-      "temperature": null,
-      "notes": null,
-      "whaleSightings": [],
-      "catches": [],
-      "crewEvents": []
-    },
-    {
       "date": "1843-12-08",
       "time": null,
       "latitude": -42,
       "longitude": -134.5,
       "weather": "strong breezes",
       "course": "east",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": "Employed fitting rigging.",
       "whaleSightings": [],
@@ -6995,10 +7001,10 @@
       "date": "1843-12-09",
       "time": null,
       "latitude": -42.5,
-      "longitude": -28.87,
+      "longitude": -28.867,
       "weather": "strong breezes",
       "course": "east",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -7012,7 +7018,7 @@
       "longitude": -125.5,
       "weather": "hard gales",
       "course": "east",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": "All hands well.",
       "whaleSightings": [],
@@ -7022,11 +7028,11 @@
     {
       "date": "1843-12-11",
       "time": null,
-      "latitude": -41.38,
-      "longitude": -120.67,
+      "latitude": -41.383,
+      "longitude": -120.667,
       "weather": "hard gales",
       "course": "east",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": "Employed bending fore topsail.",
       "whaleSightings": [],
@@ -7037,9 +7043,9 @@
       "date": "1843-12-12",
       "time": null,
       "latitude": -40.25,
-      "longitude": -114.62,
+      "longitude": -114.617,
       "weather": "fresh breezes",
-      "course": "E by S",
+      "course": "east",
       "windDirection": "SW",
       "temperature": null,
       "notes": "Bound Towards Cape Horn.",
@@ -7050,8 +7056,8 @@
     {
       "date": "1843-12-13",
       "time": null,
-      "latitude": -39.47,
-      "longitude": -112.42,
+      "latitude": -39.467,
+      "longitude": -112.417,
       "weather": "fresh breezes",
       "course": "east",
       "windDirection": "SSW",
@@ -7065,10 +7071,10 @@
       "date": "1843-12-14",
       "time": null,
       "latitude": -39.4,
-      "longitude": -110.33,
+      "longitude": -110.333,
       "weather": "light breezes",
       "course": "east",
-      "windDirection": "S",
+      "windDirection": "south",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -7078,11 +7084,11 @@
     {
       "date": "1843-12-15",
       "time": null,
-      "latitude": -39.07,
+      "latitude": -39.067,
       "longitude": -109.5,
       "weather": "light winds",
-      "course": "E by S",
-      "windDirection": "S",
+      "course": "east",
+      "windDirection": "south",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -7092,13 +7098,13 @@
     {
       "date": "1843-12-16",
       "time": "14:00",
-      "latitude": -40.48,
-      "longitude": -105.78,
-      "weather": "light winds",
+      "latitude": -40.483,
+      "longitude": -105.783,
+      "weather": "light winds, rain",
       "course": "east",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
-      "notes": "At 2 PM wind hauled to the north with rain.",
+      "notes": "At 2 PM wind hauled to the north.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7106,11 +7112,11 @@
     {
       "date": "1843-12-17",
       "time": null,
-      "latitude": -40.78,
-      "longitude": -103.17,
+      "latitude": -40.783,
+      "longitude": -103.167,
       "weather": "fine breezes",
       "course": "E by S",
-      "windDirection": "S",
+      "windDirection": "south",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -7120,8 +7126,8 @@
     {
       "date": "1843-12-18",
       "time": null,
-      "latitude": -41.28,
-      "longitude": -101.13,
+      "latitude": -41.283,
+      "longitude": -101.133,
       "weather": "fine breezes",
       "course": "SE by E",
       "windDirection": "SW",
@@ -7135,10 +7141,10 @@
       "date": "1843-12-19",
       "time": null,
       "latitude": -42.35,
-      "longitude": -97.83,
+      "longitude": -97.833,
       "weather": "fresh breezes",
       "course": "ESE",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -7149,12 +7155,12 @@
       "date": "1843-12-20",
       "time": null,
       "latitude": -42.35,
-      "longitude": -97.83,
-      "weather": "fresh breezes",
+      "longitude": -97.833,
+      "weather": "fresh breezes, thick with rain",
       "course": "ESE",
       "windDirection": "NNE",
       "temperature": null,
-      "notes": "Middle Part thick with rain.",
+      "notes": "No observations.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7164,9 +7170,9 @@
       "time": null,
       "latitude": -45,
       "longitude": -94.25,
-      "weather": "fresh gales",
+      "weather": "fresh gales with rain",
       "course": "SE by E",
-      "windDirection": "N",
+      "windDirection": "north",
       "temperature": null,
       "notes": "All sail out.",
       "whaleSightings": [],
@@ -7176,7 +7182,7 @@
     {
       "date": "1843-12-22",
       "time": null,
-      "latitude": -46.83,
+      "latitude": -46.833,
       "longitude": -91.25,
       "weather": "fresh breezes",
       "course": "SE by E",
@@ -7190,7 +7196,7 @@
     {
       "date": "1843-12-23",
       "time": null,
-      "latitude": -48.38,
+      "latitude": -48.383,
       "longitude": -88.25,
       "weather": "fresh breezes",
       "course": "ESE",
@@ -7205,7 +7211,7 @@
       "date": "1843-12-24",
       "time": null,
       "latitude": -50.45,
-      "longitude": -85.62,
+      "longitude": -85.617,
       "weather": "fresh breezes",
       "course": "ESE",
       "windDirection": "NW",
@@ -7218,7 +7224,7 @@
     {
       "date": "1843-12-25",
       "time": "10:00",
-      "latitude": -52.02,
+      "latitude": -52.017,
       "longitude": -82.25,
       "weather": "fresh breezes",
       "course": "SE by E",
@@ -7233,12 +7239,12 @@
       "date": "1843-12-26",
       "time": "16:00",
       "latitude": -52.75,
-      "longitude": -78.07,
-      "weather": "light breezes",
+      "longitude": -78.067,
+      "weather": "light breezes, fresh gales",
       "course": "ESE",
       "windDirection": "W",
       "temperature": null,
-      "notes": "Lowered for two large Sperm Whale.",
+      "notes": "Lowered for two large Sperm Whales.",
       "whaleSightings": [
         {
           "species": "Sperm Whale",
@@ -7253,13 +7259,13 @@
     {
       "date": "1843-12-27",
       "time": null,
-      "latitude": -54.42,
-      "longitude": -76.17,
+      "latitude": -54.417,
+      "longitude": -76.167,
       "weather": "fine breezes",
       "course": "ESE",
       "windDirection": "WSW",
       "temperature": null,
-      "notes": "Saw an English Barque Standing to the NW.",
+      "notes": "Saw an English Barque standing to the NW.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7268,10 +7274,10 @@
       "date": "1843-12-28",
       "time": null,
       "latitude": -55.95,
-      "longitude": -75.02,
+      "longitude": -75.017,
       "weather": "fine breezes",
       "course": "ESE",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": "Bent the foresail.",
       "whaleSightings": [],
@@ -7285,7 +7291,7 @@
       "longitude": -73.4,
       "weather": "light breezes",
       "course": "E by S",
-      "windDirection": "W",
+      "windDirection": "west",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -7299,7 +7305,7 @@
       "longitude": -69.1,
       "weather": "fine breezes",
       "course": "E",
-      "windDirection": "S",
+      "windDirection": "south",
       "temperature": null,
       "notes": "Made the Islands of Diego Ramirez.",
       "whaleSightings": [],
@@ -7309,11 +7315,11 @@
     {
       "date": "1843-12-31",
       "time": "03:30",
-      "latitude": -56.92,
-      "longitude": -67.68,
-      "weather": "light breezes",
+      "latitude": -56.917,
+      "longitude": -67.683,
+      "weather": "light breezes, calm",
       "course": "ESE",
-      "windDirection": "S",
+      "windDirection": "south",
       "temperature": null,
       "notes": "Saw the land of Cape Horn.",
       "whaleSightings": [],
@@ -7323,8 +7329,8 @@
     {
       "date": "1844-01-01",
       "time": "08:30",
-      "latitude": -56.87,
-      "longitude": -66.58,
+      "latitude": -56.867,
+      "longitude": -66.583,
       "weather": "fresh breezes",
       "course": "NE",
       "windDirection": "SE",
@@ -7336,10 +7342,10 @@
     },
     {
       "date": "1844-01-02",
-      "time": "05:00",
+      "time": null,
       "latitude": -56.7,
-      "longitude": -64.33,
-      "weather": "fresh breezes",
+      "longitude": -64.333,
+      "weather": "fresh breezes, rain",
       "course": "ENE",
       "windDirection": "N",
       "temperature": null,
@@ -7351,8 +7357,8 @@
     {
       "date": "1844-01-03",
       "time": null,
-      "latitude": -55.37,
-      "longitude": -63.78,
+      "latitude": -55.367,
+      "longitude": -63.783,
       "weather": "fresh breezes",
       "course": "N by W",
       "windDirection": "SSW",
@@ -7365,10 +7371,10 @@
     {
       "date": "1844-01-04",
       "time": null,
-      "latitude": -54.58,
-      "longitude": -62.38,
-      "weather": "fresh breezes",
-      "course": "N by W",
+      "latitude": -54.583,
+      "longitude": -62.383,
+      "weather": "fresh breezes, rain",
+      "course": "ESE",
       "windDirection": "NE",
       "temperature": null,
       "notes": null,
@@ -7378,14 +7384,14 @@
     },
     {
       "date": "1844-01-05",
-      "time": "17:00",
-      "latitude": -51.78,
+      "time": null,
+      "latitude": -51.783,
       "longitude": -63.25,
-      "weather": "fresh gales",
+      "weather": "fresh gales, heavy snow storms",
       "course": "NNW",
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Blowing a gale brought the ship under double reefed topsails.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7393,8 +7399,8 @@
     {
       "date": "1844-01-06",
       "time": null,
-      "latitude": -48.58,
-      "longitude": -61.67,
+      "latitude": -48.583,
+      "longitude": -61.667,
       "weather": "fresh gales",
       "course": "NW",
       "windDirection": "WNW",
@@ -7407,13 +7413,13 @@
     {
       "date": "1844-01-07",
       "time": "16:00",
-      "latitude": -47.22,
-      "longitude": -61.17,
+      "latitude": -47.217,
+      "longitude": -61.167,
       "weather": "fine breezes",
       "course": "NNW",
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Made all sail.",
+      "notes": "More moderate made all sail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7421,8 +7427,8 @@
     {
       "date": "1844-01-08",
       "time": "02:00",
-      "latitude": -47.72,
-      "longitude": -58.33,
+      "latitude": -47.717,
+      "longitude": -58.333,
       "weather": "fine breezes",
       "course": "NE",
       "windDirection": "SW",
@@ -7434,14 +7440,14 @@
     },
     {
       "date": "1844-01-09",
-      "time": "22:00",
+      "time": null,
       "latitude": -44.5,
       "longitude": -53.85,
-      "weather": "strong breezes",
+      "weather": "strong breezes, blowing a gale",
       "course": null,
       "windDirection": "WNW",
       "temperature": null,
-      "notes": "Came on to blow a gale.",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7449,8 +7455,8 @@
     {
       "date": "1844-01-10",
       "time": null,
-      "latitude": -42.73,
-      "longitude": -51.63,
+      "latitude": -42.733,
+      "longitude": -51.633,
       "weather": "hard gales",
       "course": "NE",
       "windDirection": "SW",
@@ -7463,10 +7469,10 @@
     {
       "date": "1844-01-11",
       "time": "13:00",
-      "latitude": -42.22,
-      "longitude": -48.33,
+      "latitude": -42.217,
+      "longitude": -48.333,
       "weather": "light breezes",
-      "course": "ENE",
+      "course": null,
       "windDirection": "SW",
       "temperature": null,
       "notes": "Spoke the Ship William C. Ney of New London.",
@@ -7483,7 +7489,7 @@
       "course": "NE",
       "windDirection": "S",
       "temperature": null,
-      "notes": "Came on thick with heavy rain.",
+      "notes": "Came on thick with heavy rain; wind hauled to the S with a hard gale.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7511,7 +7517,7 @@
       "course": "E",
       "windDirection": "WNW",
       "temperature": null,
-      "notes": "Came on a thunder storm with rain.",
+      "notes": "Came on a thunderstorm with rain.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7607,9 +7613,9 @@
       "longitude": -42.5,
       "weather": "fresh breezes, hard squalls",
       "course": "N",
-      "windDirection": null,
+      "windDirection": "N",
       "temperature": null,
-      "notes": "Came on a heavy thunder storm.",
+      "notes": "Came on a heavy thunderstorm; took in the foresail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7621,7 +7627,7 @@
       "longitude": -43.58,
       "weather": "hard gales, fine breezes",
       "course": "NNW",
-      "windDirection": "SW",
+      "windDirection": "N",
       "temperature": null,
       "notes": "Employed bunching bone.",
       "whaleSightings": [],
@@ -7663,7 +7669,7 @@
       "longitude": -42.58,
       "weather": "fresh breezes",
       "course": "NNE",
-      "windDirection": "E",
+      "windDirection": "SE",
       "temperature": null,
       "notes": "Employed refitting rigging.",
       "whaleSightings": [],
@@ -7707,7 +7713,7 @@
       "course": null,
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Crew employed in refitting rigging.",
+      "notes": "Crew employed in refitting rigging; all hands well.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7789,7 +7795,7 @@
       "longitude": -37.35,
       "weather": "fine breezes",
       "course": "ESE",
-      "windDirection": null,
+      "windDirection": "NE",
       "temperature": null,
       "notes": "Employed variously in refitting rigging.",
       "whaleSightings": [],
@@ -7819,13 +7825,13 @@
       "course": "E",
       "windDirection": "NNE",
       "temperature": null,
-      "notes": "Saw sperm whales lowered and struck 3.",
+      "notes": "Saw sperm whales lowered and struck 3; starboard boat got stove.",
       "whaleSightings": [
         {
           "species": "sperm whale",
           "count": 3,
           "caught": true,
-          "notes": "Starboard boat got stove had to cut, saved two whale took them to the ship and commenced cutting."
+          "notes": "Saved two whales and commenced cutting them."
         }
       ],
       "catches": [
@@ -7834,14 +7840,14 @@
           "oilBarrels": null,
           "blubberWeight": null,
           "boneWeight": null,
-          "notes": null
+          "notes": "Cutting commenced."
         }
       ],
       "crewEvents": []
     },
     {
       "date": "1844-02-06",
-      "time": null,
+      "time": "15:00",
       "latitude": -23.33,
       "longitude": -35.78,
       "weather": "fresh breezes, fine breezes",
@@ -7904,7 +7910,7 @@
       "course": null,
       "windDirection": "NNE",
       "temperature": null,
-      "notes": "Employed making a new main topgallant sail and fitting a new bobstay.",
+      "notes": "Employed making a new main topgallant sail.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -7916,7 +7922,7 @@
       "longitude": -34.73,
       "weather": "light breezes",
       "course": null,
-      "windDirection": null,
+      "windDirection": "NNE",
       "temperature": null,
       "notes": "Employed variously in rigging.",
       "whaleSightings": [],
@@ -7926,7 +7932,7 @@
     {
       "date": "1844-02-12",
       "time": null,
-      "latitude": -21.38,
+      "latitude": -21.39,
       "longitude": -33.43,
       "weather": "light breezes, head winds",
       "course": null,
@@ -7940,11 +7946,11 @@
     {
       "date": "1844-02-13",
       "time": null,
-      "latitude": -20.38,
+      "latitude": -20.39,
       "longitude": -33.72,
       "weather": "light winds",
       "course": null,
-      "windDirection": null,
+      "windDirection": "ENE to NNE",
       "temperature": null,
       "notes": "Employed variously in rigging.",
       "whaleSightings": [],
@@ -7998,11 +8004,11 @@
       "time": "14:00",
       "latitude": -19.183,
       "longitude": -30.917,
-      "weather": "light winds from the N, calm",
+      "weather": "light winds from the N",
       "course": "N by E",
       "windDirection": "N",
       "temperature": null,
-      "notes": "Employed ratling rigging.",
+      "notes": "Calm at 2 PM, light breeze from ESE at 10 PM.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8030,7 +8036,7 @@
       "course": "N by E",
       "windDirection": "E",
       "temperature": null,
-      "notes": "Two sails in sight, employed taring down rigging.",
+      "notes": "Two sails in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8058,7 +8064,7 @@
       "course": "N by W",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Saw two sails standing to the SW, employed cleaning ship.",
+      "notes": "Saw two sails standing to the SW.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8072,7 +8078,7 @@
       "course": "NNW",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Made the land, saw several sails and small boats.",
+      "notes": "Made land, saw several sails and small boats.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8086,7 +8092,7 @@
       "course": "NW",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Brought the ship to anchor in 8 fathoms of water.",
+      "notes": "Brought the ship to anchor in 8 fathoms water.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8100,7 +8106,7 @@
       "course": "ENE",
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Got the ship underway.",
+      "notes": "All hands on board got the ship underway.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8110,11 +8116,11 @@
       "time": null,
       "latitude": -5.333,
       "longitude": -34.333,
-      "weather": "light breezes from ESE, heavy rain squalls",
+      "weather": "light breezes from ESE",
       "course": "NE",
       "windDirection": "ESE",
       "temperature": null,
-      "notes": null,
+      "notes": "Heavy rain squalls in the latter part.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8126,7 +8132,7 @@
       "longitude": -34.95,
       "weather": "light breezes with rain",
       "course": "N by E",
-      "windDirection": null,
+      "windDirection": "SE",
       "temperature": null,
       "notes": "Employed painting yards.",
       "whaleSightings": [],
@@ -8150,7 +8156,7 @@
     {
       "date": "1844-02-28",
       "time": null,
-      "latitude": 0.667,
+      "latitude": -0.667,
       "longitude": -37.833,
       "weather": "fine breezes from NE",
       "course": "NW by N",
@@ -8163,8 +8169,8 @@
     },
     {
       "date": "1844-02-29",
-      "time": "19:00",
-      "latitude": 0.933,
+      "time": null,
+      "latitude": -0.933,
       "longitude": -39.667,
       "weather": "fine breezes from NE",
       "course": "NW by N",
@@ -8198,7 +8204,7 @@
       "course": "NW by N",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Employed variously in rigging.",
+      "notes": "Nothing in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8233,8 +8239,15 @@
       "course": "NW by N",
       "windDirection": "NE",
       "temperature": null,
-      "notes": "Employed whitewashing the lower masts and mastheads.",
-      "whaleSightings": [],
+      "notes": "Saw blackfish.",
+      "whaleSightings": [
+        {
+          "species": "blackfish",
+          "count": 1,
+          "caught": false,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -8343,7 +8356,7 @@
       "longitude": -61.283,
       "weather": "light winds and variable",
       "course": null,
-      "windDirection": null,
+      "windDirection": "NW",
       "temperature": null,
       "notes": "Brought the ship under double reefed topsails.",
       "whaleSightings": [],
@@ -8465,7 +8478,7 @@
     },
     {
       "date": "1844-03-20",
-      "time": "17:00",
+      "time": "05:00",
       "latitude": 28.967,
       "longitude": -66.133,
       "weather": "light breezes from SE",
@@ -8509,7 +8522,7 @@
       "date": "1844-03-23",
       "time": null,
       "latitude": 31.3,
-      "longitude": -67.266,
+      "longitude": -67.26667,
       "weather": "hard gales from west",
       "course": null,
       "windDirection": "NW",
@@ -8521,14 +8534,14 @@
     },
     {
       "date": "1844-03-24",
-      "time": "14:00",
-      "latitude": 33.517,
-      "longitude": -68.217,
+      "time": null,
+      "latitude": 33.51667,
+      "longitude": -68.21667,
       "weather": "hard gales from SW, heavy thunder squall",
       "course": "NNW",
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Split the foresail and main topsail.",
+      "notes": "Oil got adrift between decks and started to leak.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8536,7 +8549,7 @@
     {
       "date": "1844-03-25",
       "time": "18:00",
-      "latitude": 33.583,
+      "latitude": 33.58333,
       "longitude": -67.55,
       "weather": "hard gales from NW",
       "course": null,
@@ -8550,7 +8563,7 @@
     {
       "date": "1844-03-26",
       "time": "04:00",
-      "latitude": 34.633,
+      "latitude": 34.63333,
       "longitude": -68.3,
       "weather": "fresh gales from west",
       "course": "NW by N",
@@ -8564,7 +8577,7 @@
     {
       "date": "1844-03-27",
       "time": null,
-      "latitude": 25.917,
+      "latitude": 25.91667,
       "longitude": -69.2,
       "weather": "fresh gales from WSW",
       "course": "NW",
@@ -8578,9 +8591,9 @@
     {
       "date": "1844-03-28",
       "time": "23:00",
-      "latitude": 37.633,
-      "longitude": -70.667,
-      "weather": "fresh breezes from WSW, squally",
+      "latitude": 37.63333,
+      "longitude": -70.66667,
+      "weather": "fresh breezes, squally",
       "course": "NW",
       "windDirection": "SSW",
       "temperature": null,
@@ -8592,8 +8605,8 @@
     {
       "date": "1844-03-29",
       "time": "18:00",
-      "latitude": 39.283,
-      "longitude": -71.417,
+      "latitude": 39.28333,
+      "longitude": -71.41667,
       "weather": "fresh breezes from SSW",
       "course": "NW by N",
       "windDirection": "SSW",
@@ -8606,13 +8619,13 @@
     {
       "date": "1844-03-30",
       "time": "18:30",
-      "latitude": 40.483,
-      "longitude": -72.167,
-      "weather": "light breezes from NW",
+      "latitude": 40.48333,
+      "longitude": -72.16667,
+      "weather": "light breezes from NW, hard gales with rain",
       "course": "N by W",
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Brought the ship too.",
+      "notes": "Spoke the Schooner Roanoke.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8620,9 +8633,9 @@
     {
       "date": "1844-03-31",
       "time": null,
-      "latitude": 40.483,
-      "longitude": -71.833,
-      "weather": "hard gales from NW with keen cold weather",
+      "latitude": 40.48333,
+      "longitude": -71.83333,
+      "weather": "hard gales from NW, sharp frost",
       "course": "SE",
       "windDirection": "NE",
       "temperature": 35,
@@ -8634,9 +8647,9 @@
     {
       "date": "1844-04-01",
       "time": null,
-      "latitude": 39.483,
+      "latitude": 39.48333,
       "longitude": -72.5,
-      "weather": "hard gales from NE with heavy snow storms",
+      "weather": "hard gales from NE, heavy snow storms",
       "course": null,
       "windDirection": "NE",
       "temperature": null,
@@ -8648,8 +8661,8 @@
     {
       "date": "1844-04-02",
       "time": null,
-      "latitude": 28.567,
-      "longitude": -72.583,
+      "latitude": 28.56667,
+      "longitude": -72.58333,
       "weather": "strong gales from NE",
       "course": null,
       "windDirection": "NE",
@@ -8663,9 +8676,9 @@
       "date": "1844-04-03",
       "time": "06:00",
       "latitude": 38.5,
-      "longitude": -72.733,
+      "longitude": -72.73333,
       "weather": "strong gales from NE",
-      "course": "NNW",
+      "course": "N by E 1/2 E",
       "windDirection": "NE",
       "temperature": null,
       "notes": "Made sail on the eastern tack.",
@@ -8682,7 +8695,7 @@
       "course": "N by E",
       "windDirection": "WSW",
       "temperature": null,
-      "notes": "Came on thick, brought the ship too.",
+      "notes": "Came on thick, brought the ship too with the main yard aback.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -8700,8 +8713,8 @@
       "whaleSightings": [],
       "catches": [
         {
-          "whaleCount": 21,
-          "oilBarrels": 2300,
+          "whaleCount": 0,
+          "oilBarrels": 2600,
           "blubberWeight": null,
           "boneWeight": null,
           "notes": "So Ends this whaling voyage."
@@ -8746,7 +8759,7 @@
       "course": null,
       "windDirection": null,
       "temperature": null,
-      "notes": "Log entry mentioning various crew members.",
+      "notes": "Log entry from John B. Kirby in Middletown.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []

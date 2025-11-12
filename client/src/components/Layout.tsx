@@ -24,7 +24,7 @@ export default function Layout({ children, darkMode, toggleDarkMode }: LayoutPro
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-card sticky top-0 z-50">
+      <header className="border-b border-border bg-card">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-3">
@@ -51,7 +51,7 @@ export default function Layout({ children, darkMode, toggleDarkMode }: LayoutPro
       </header>
 
       {/* Navigation */}
-      <nav className="border-b border-border bg-card sticky top-16 z-40">
+      <nav className="border-b border-border bg-card">
         <div className="container mx-auto px-4">
           <ul className="flex space-x-1">
             {navLinks.map(({ path, icon: Icon, label }) => (
