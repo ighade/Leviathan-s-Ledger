@@ -160,7 +160,9 @@ async function insertWhaleSighting(sighting: any): Promise<void> {
     [
       sighting.logEntryId,
       sighting.species || null,
-      sighting.count,
+      // Ensure count is not null/undefined to satisfy NOT NULL constraint on the DB.
+      // Default to 1 if parser didn't provide a count.
+      (sighting.count == null ? 1 : sighting.count),
       sighting.latitude || null,
       sighting.longitude || null,
       sighting.caught ? 1 : 0,
