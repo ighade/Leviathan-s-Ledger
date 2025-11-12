@@ -1,8 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/Card';
 import { useStatistics } from '../hooks/useStatistics';
 import Loading from '../components/Loading';
-import { Ship, Anchor, FileText, Eye, TrendingUp } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { Ship, Anchor, FileText, Eye } from 'lucide-react';
+import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
 
 export default function Dashboard() {
   const { data, loading, error } = useStatistics();
@@ -36,12 +36,6 @@ export default function Dashboard() {
       icon: Eye,
       description: 'Totaal waargenomen',
     },
-    {
-      title: 'Vaten Olie',
-      value: data.overview.totalOilBarrels,
-      icon: TrendingUp,
-      description: 'Totale opbrengst',
-    },
   ];
 
   const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'];
@@ -56,7 +50,7 @@ export default function Dashboard() {
       </div>
 
       {/* Statistics Cards */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <Card key={stat.title}>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -74,7 +68,7 @@ export default function Dashboard() {
       </div>
 
       {/* Charts Grid */}
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid gap-6">
         {/* Species Breakdown */}
         <Card>
           <CardHeader>
@@ -102,65 +96,7 @@ export default function Dashboard() {
             </ResponsiveContainer>
           </CardContent>
         </Card>
-
-        {/* Catches Over Time */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Vangsten Over Tijd</CardTitle>
-            <CardDescription>Maandelijkse vangsten en olie productie</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={data.catchesByMonth.slice(-12)}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="catchCount" fill="#3b82f6" name="Vangsten" />
-                <Bar dataKey="oilBarrels" fill="#10b981" name="Vaten Olie" />
-              </BarChart>
-            </ResponsiveContainer>
-          </CardContent>
-        </Card>
       </div>
-
-      {/* Top Hunting Areas */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Populaire Jachtgebieden</CardTitle>
-          <CardDescription>Top 10 gebieden met meeste waarnemingen</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left py-2 px-4">Coördinaten</th>
-                  <th className="text-right py-2 px-4">Waarnemingen</th>
-                  <th className="text-right py-2 px-4">Vangsten</th>
-                  <th className="text-right py-2 px-4">Success Rate</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.huntingAreas.slice(0, 10).map((area, index) => (
-                  <tr key={index} className="border-b border-border hover:bg-accent">
-                    <td className="py-2 px-4">
-                      {Math.abs(area.lat).toFixed(0)}° {area.lat >= 0 ? 'N' : 'S'},{' '}
-                      {Math.abs(area.lon).toFixed(0)}° {area.lon >= 0 ? 'E' : 'W'}
-                    </td>
-                    <td className="text-right py-2 px-4">{area.sightings}</td>
-                    <td className="text-right py-2 px-4">{area.catches}</td>
-                    <td className="text-right py-2 px-4">
-                      {area.sightings > 0 ? ((area.catches / area.sightings) * 100).toFixed(1) : 0}%
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 }

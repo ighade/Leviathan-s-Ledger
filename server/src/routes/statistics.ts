@@ -41,12 +41,12 @@ router.get('/', async (req, res) => {
     // Whale species breakdown
     const speciesBreakdown = await query(`
       SELECT 
-        COALESCE(species, 'Unknown') as species,
+        COALESCE(LOWER(species), 'unknown') as species,
         COUNT(*) as sightings,
         COALESCE(SUM(count), 0) as totalCount,
         COALESCE(SUM(CASE WHEN caught = 1 THEN count ELSE 0 END), 0) as caughtCount
       FROM whale_sightings
-      GROUP BY species
+      GROUP BY LOWER(species)
       ORDER BY totalCount DESC
       LIMIT 10
     `).catch(() => []);
