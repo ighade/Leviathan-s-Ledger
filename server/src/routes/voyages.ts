@@ -80,5 +80,69 @@ router.get('/:id/log-entries', async (req, res) => {
   }
 });
 
+// GET /api/voyages/:id/route - Get route data (log entries with coordinates) for a voyage
+router.get('/:id/route', async (req, res) => {
+  try {
+    const { id } = req.params;
+    
+    // Get log entries with coordinates
+    const logEntries = await query(
+      `SELECT le.*, s.name as ship_name
+       FROM log_entries le
+       JOIN voyages v ON le.voyage_id = v.id
+       JOIN ships s ON v.ship_id = s.id
+       WHERE le.voyage_id = ? 
+         AND le.latitude IS NOT NULL 
+         AND le.longitude IS NOT NULL
+       ORDER BY le.date ASC, le.time ASC`,
+      [id]
+    );
+    
+    // Get counts for each log entry
+    const entriesWithCounts = await Promise.all(
+      logEntries.map(async (entry: any) => {
+        const [whaleCount] = await query<{ count: number }>(
+          'SELECT COUNT(*) as count FROM whale_sightings WHERE log_entry_id = ?',
+          [entry.id]
+        );
+        const [catchCount] = await query<{ count: number }>(
+          'SELECT COUNT(*) as count FROM catches WHERE log_entry_id = ?',
+          [entry.id]
+        );
+        return {
+          ...entry,
+          whale_sightings_count: whaleCount.count,
+          catches_count: catchCount.count,
+        };
+      })
+    );
+    
+    // Also get whale sightings for this voyage
+    const whaleSightings = await query(
+      `SELECT ws.*, 
+              le.date, 
+              COALESCE(ws.latitude, le.latitude) as latitude,
+              COALESCE(ws.longitude, le.longitude) as longitude,
+              s.name as ship_name
+       FROM whale_sightings ws
+       JOIN log_entries le ON ws.log_entry_id = le.id
+       JOIN voyages v ON le.voyage_id = v.id
+       JOIN ships s ON v.ship_id = s.id
+       WHERE le.voyage_id = ? 
+         AND (COALESCE(ws.latitude, le.latitude) IS NOT NULL)
+         AND (COALESCE(ws.longitude, le.longitude) IS NOT NULL)`,
+      [id]
+    );
+    
+    res.json({
+      route: entriesWithCounts,
+      whaleSightings: whaleSightings
+    });
+  } catch (error) {
+    console.error('Error fetching voyage route:', error);
+    res.status(500).json({ error: 'Failed to fetch voyage route' });
+  }
+});
+
 export default router;
 

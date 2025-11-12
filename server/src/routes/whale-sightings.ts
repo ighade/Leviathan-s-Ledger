@@ -18,7 +18,13 @@ router.get('/', async (req, res) => {
     } = req.query;
     
     let sql = `
-      SELECT ws.*, le.date, le.voyage_id, v.ship_id, s.name as ship_name
+      SELECT ws.*, 
+             le.date, 
+             le.voyage_id, 
+             v.ship_id, 
+             s.name as ship_name,
+             COALESCE(ws.latitude, le.latitude) as latitude,
+             COALESCE(ws.longitude, le.longitude) as longitude
       FROM whale_sightings ws
       JOIN log_entries le ON ws.log_entry_id = le.id
       JOIN voyages v ON le.voyage_id = v.id

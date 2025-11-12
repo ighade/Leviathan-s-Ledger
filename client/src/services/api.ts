@@ -127,5 +127,11 @@ export const getStatistics = () =>
 export const getTimeline = (params?: { startDate?: string; endDate?: string; type?: string }) =>
   api.get<TimelineEvent[]>('/timeline', { params }).then(res => res.data);
 
+export const getVoyageRoute = (voyageId: number) =>
+  api.get<{
+    route: LogEntry[];
+    whaleSightings: WhaleSighting[];
+  }>(`/voyages/${voyageId}/route`).then(res => res.data);
+
 export default api;
 
