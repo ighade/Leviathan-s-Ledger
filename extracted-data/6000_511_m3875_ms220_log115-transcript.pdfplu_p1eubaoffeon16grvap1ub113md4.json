@@ -3,7 +3,7 @@
   "shipType": null,
   "homePort": null,
   "voyageStartDate": "1844-09-08",
-  "voyageEndDate": null,
+  "voyageEndDate": "1855-01-01",
   "logEntries": [
     {
       "date": "1844-09-08",
@@ -25,8 +25,8 @@
       "latitude": -32.25,
       "longitude": -87,
       "weather": "light winds, overcast",
-      "course": "S W",
-      "windDirection": "SS",
+      "course": "S by W",
+      "windDirection": "SSW",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -38,17 +38,17 @@
       "time": "17:00",
       "latitude": -32.267,
       "longitude": -86.417,
-      "weather": "gale, light breeze",
+      "weather": "gale, light winds",
       "course": "E S E",
       "windDirection": "S",
       "temperature": null,
-      "notes": "Chased sperm whale but did not get near",
+      "notes": "Chased a sperm whale but did not get near",
       "whaleSightings": [
         {
           "species": "sperm whale",
           "count": 1,
           "caught": false,
-          "notes": "Lost sight of the whale"
+          "notes": "Lost sight of him"
         }
       ],
       "catches": [],
@@ -63,13 +63,13 @@
       "course": "N by W",
       "windDirection": null,
       "temperature": null,
-      "notes": "Chased whale but did not get near",
+      "notes": "Chased a whale but lost sight of him",
       "whaleSightings": [
         {
           "species": "whale",
           "count": 1,
           "caught": false,
-          "notes": "Lost sight of the whale"
+          "notes": null
         }
       ],
       "catches": [],
@@ -84,7 +84,7 @@
       "course": "WSE",
       "windDirection": "SWE",
       "temperature": null,
-      "notes": "Waiting for weather to clear",
+      "notes": "Waiting for weather to clear up",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -96,7 +96,7 @@
       "longitude": -77.067,
       "weather": "light wind, overcast",
       "course": "S by E",
-      "windDirection": "ENE",
+      "windDirection": "SE",
       "temperature": null,
       "notes": null,
       "whaleSightings": [],
@@ -161,14 +161,14 @@
     },
     {
       "date": "1844-10-16",
-      "time": "16:00",
+      "time": "18:00",
       "latitude": -56.15,
       "longitude": -82.25,
-      "weather": "light winds, squalls of rain",
+      "weather": "light winds, rain",
       "course": "W by S",
       "windDirection": "SSW",
       "temperature": null,
-      "notes": "Made land with a ship",
+      "notes": null,
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -178,7 +178,7 @@
       "time": "06:00",
       "latitude": -6.967,
       "longitude": -82.55,
-      "weather": "strong winds, squalls",
+      "weather": "strong winds",
       "course": "E by S",
       "windDirection": "SW",
       "temperature": null,
@@ -224,7 +224,7 @@
       "course": "W by N",
       "windDirection": "SW",
       "temperature": null,
-      "notes": "Started breaking out to oil",
+      "notes": "Finished stowing down oil",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -256,8 +256,8 @@
       "latitude": -41.333,
       "longitude": -79.15,
       "weather": "overcast, strong breeze",
-      "course": "N",
-      "windDirection": "W",
+      "course": "N and W",
+      "windDirection": "SW",
       "temperature": null,
       "notes": "All hands employed in boiling",
       "whaleSightings": [],
@@ -270,10 +270,10 @@
       "latitude": -41.467,
       "longitude": -79.367,
       "weather": "gale of wind",
-      "course": "SW",
+      "course": "SW by W",
       "windDirection": "WNW",
       "temperature": null,
-      "notes": "All hands employed in boiling",
+      "notes": "Finished boiling",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -287,7 +287,7 @@
       "course": "SSW",
       "windDirection": "W",
       "temperature": null,
-      "notes": "All hands employed in stirring down oil",
+      "notes": "All hands employed in stowing down oil",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -297,18 +297,18 @@
       "time": null,
       "latitude": -42.017,
       "longitude": -79.75,
-      "weather": "fine weather, strong breeze",
+      "weather": "fine weather",
       "course": "SW by S",
       "windDirection": "WNW",
       "temperature": null,
-      "notes": "All hands employed in slowing down oil",
+      "notes": "Finished slowing down all",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
     },
     {
       "date": "1844-12-12",
-      "time": null,
+      "time": "05:00",
       "latitude": -41.867,
       "longitude": -79.833,
       "weather": "strong winds, heavy squalls",
@@ -325,7 +325,7 @@
       "time": null,
       "latitude": -41.3,
       "longitude": -79.083,
-      "weather": "squally, thick weather",
+      "weather": "squally, thick",
       "course": "NW by N",
       "windDirection": "WSW",
       "temperature": null,
@@ -367,12 +367,19 @@
       "time": null,
       "latitude": null,
       "longitude": null,
-      "weather": null,
-      "course": null,
-      "windDirection": null,
+      "weather": "fine weather",
+      "course": "E by S",
+      "windDirection": "S by E",
       "temperature": null,
       "notes": "Saw a dead whale",
-      "whaleSightings": [],
+      "whaleSightings": [
+        {
+          "species": "dead whale",
+          "count": 1,
+          "caught": false,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -394,9 +401,9 @@
       "date": "1844-12-22",
       "time": "19:00",
       "latitude": -39.75,
-      "longitude": -78.41667,
+      "longitude": -78.417,
       "weather": "strong winds",
-      "course": "NE",
+      "course": "NE by W",
       "windDirection": "NW",
       "temperature": null,
       "notes": "Shortened sail.",
@@ -408,7 +415,7 @@
       "date": "1844-12-23",
       "time": "13:00",
       "latitude": -38.15,
-      "longitude": -78.33333,
+      "longitude": -78.333,
       "weather": "thick and rainy",
       "course": "NE by N",
       "windDirection": "NW",
@@ -421,8 +428,8 @@
     {
       "date": "1844-12-24",
       "time": "07:00",
-      "latitude": -34.33333,
-      "longitude": -78.81667,
+      "latitude": -34.333,
+      "longitude": -78.817,
       "weather": "fine weather",
       "course": "NW",
       "windDirection": "WSW",
@@ -443,12 +450,12 @@
       "date": "1844-12-30",
       "time": null,
       "latitude": -34.75,
-      "longitude": -81.08333,
+      "longitude": -81.083,
       "weather": "fine weather",
       "course": "NW",
       "windDirection": null,
       "temperature": null,
-      "notes": "Steering towards the island of Massafuero.",
+      "notes": "Island of Massafuero in sight.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
@@ -457,7 +464,7 @@
       "date": "1844-12-31",
       "time": null,
       "latitude": -33.3,
-      "longitude": -81.16667,
+      "longitude": -81.167,
       "weather": "light squall",
       "course": "WNW",
       "windDirection": "SW",
@@ -470,14 +477,21 @@
     {
       "date": "1845-01-01",
       "time": "13:00",
-      "latitude": -33.58333,
+      "latitude": -33.583,
       "longitude": -81,
       "weather": "fine weather",
       "course": "W",
       "windDirection": "S",
       "temperature": null,
       "notes": "Spoke the book Mary Frasier of New Bedford.",
-      "whaleSightings": [],
+      "whaleSightings": [
+        {
+          "species": "finback",
+          "count": 1,
+          "caught": false,
+          "notes": null
+        }
+      ],
       "catches": [],
       "crewEvents": []
     },
@@ -485,7 +499,7 @@
       "date": "1845-01-02",
       "time": null,
       "latitude": -33.75,
-      "longitude": -81.33333,
+      "longitude": -81.333,
       "weather": "overcast",
       "course": "SW",
       "windDirection": "SSE",
@@ -499,10 +513,10 @@
       "date": "1845-01-04",
       "time": "07:00",
       "latitude": -34.15,
-      "longitude": -84.91667,
-      "weather": "light breeze",
-      "course": "SW by W",
-      "windDirection": null,
+      "longitude": -84.917,
+      "weather": null,
+      "course": null,
+      "windDirection": "E",
       "temperature": null,
       "notes": "Finished boiling.",
       "whaleSightings": [],
@@ -512,8 +526,8 @@
     {
       "date": "1845-01-08",
       "time": "19:00",
-      "latitude": -34.16667,
-      "longitude": -56.16667,
+      "latitude": -34.167,
+      "longitude": -56.167,
       "weather": "fine weather",
       "course": "WSW",
       "windDirection": null,
@@ -521,10 +535,10 @@
       "notes": "Saw a whale to the WNW.",
       "whaleSightings": [
         {
-          "species": "finback",
+          "species": "whale",
           "count": 1,
           "caught": false,
-          "notes": null
+          "notes": "Called him a finback."
         }
       ],
       "catches": [],
@@ -533,30 +547,38 @@
     {
       "date": "1845-01-09",
       "time": "18:00",
-      "latitude": -34.06667,
-      "longitude": -86.08333,
-      "weather": "light winds",
-      "course": "WSW",
+      "latitude": -34.067,
+      "longitude": -86.083,
+      "weather": null,
+      "course": null,
       "windDirection": "SE",
       "temperature": null,
-      "notes": "Saw a sperm whale and lowered the boats.",
+      "notes": "Commenced cutting.",
       "whaleSightings": [
         {
-          "species": "sperm",
+          "species": "sperm whale",
           "count": 1,
           "caught": true,
           "notes": null
         }
       ],
-      "catches": [],
+      "catches": [
+        {
+          "whaleCount": 1,
+          "oilBarrels": null,
+          "blubberWeight": null,
+          "boneWeight": null,
+          "notes": null
+        }
+      ],
       "crewEvents": []
     },
     {
       "date": "1845-01-10",
-      "time": null,
-      "latitude": -24.01667,
+      "time": "07:00",
+      "latitude": -24.017,
       "longitude": -87,
-      "weather": "calm",
+      "weather": null,
       "course": null,
       "windDirection": null,
       "temperature": null,
@@ -567,14 +589,14 @@
     },
     {
       "date": "1845-01-11",
-      "time": null,
-      "latitude": -34.18333,
+      "time": "11:00",
+      "latitude": -34.183,
       "longitude": -87.2,
-      "weather": "light winds",
-      "course": "WSW",
+      "weather": null,
+      "course": null,
       "windDirection": "NW",
       "temperature": null,
-      "notes": "Involved in boiling.",
+      "notes": "Wore ship heading ENE.",
       "whaleSightings": [],
       "catches": [],
       "crewEvents": []
