@@ -23,17 +23,22 @@ async function importData() {
       const filePath = path.join(extractedDataDir, file);
       console.log(`Processing: ${file}`);
       
-      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      const shipName = extractShipName(data.filename);
-      
-      // Insert or get ship
-      const ship = await insertShip({ name: shipName });
+  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const { shipName, startYear, endYear } = extractShipName(data.filename, data.text);
+
+  // Insert or get ship
+  const ship = await insertShip({ name: shipName });
       console.log(`  ✓ Ship: ${ship.name} (ID: ${ship.id})`);
       
       // Insert voyage
+      // Determine voyage dates. If we parsed years from the text, use them; otherwise keep the old default.
+      const voyageStart = startYear ? new Date(`${startYear}-01-01`) : new Date('1900-01-01');
+      const voyageEnd = endYear ? new Date(`${endYear}-12-31`) : undefined;
+
       const voyage = await insertVoyage({
         shipId: ship.id!,
-        startDate: new Date('1900-01-01'), // Default date, adjust based on actual data
+        startDate: voyageStart,
+        endDate: voyageEnd,
       });
       console.log(`  ✓ Voyage created (ID: ${voyage.id})`);
       
@@ -95,14 +100,39 @@ async function importData() {
   }
 }
 
-function extractShipName(filename: string): string {
-  // Extract ship name from filename
-  // This is a simple implementation - adjust based on actual filename patterns
+function extractShipName(filename: string, text?: string): { shipName: string; startYear?: number | null; endYear?: number | null } {
+  // Try to extract ship name and voyage years from the extracted text first.
+  // Example text: "MS220 Log 2, Log of the ship Albion, 1854-1857"
+  if (text) {
+    // Common pattern: "Log of the ship <Name>, <YYYY>[-<YYYY>]"
+    const regex = /Log\s+of\s+the\s+ship\s+([A-Za-z0-9 .\-'\"]+?)\s*,\s*(\d{4})(?:\s*[-–—]\s*(\d{4}))?/i;
+    const match = text.match(regex);
+    if (match) {
+      const shipName = match[1].trim();
+      const startYear = match[2] ? parseInt(match[2], 10) : null;
+      const endYear = match[3] ? parseInt(match[3], 10) : null;
+      return { shipName, startYear, endYear };
+    }
+
+    // Fallback pattern: "Log of the ship <Name>" possibly on its own line followed by a year range
+    const altRegex = /Log\s+of\s+the\s+ship\s+([A-Za-z0-9 .\-'\"]+?)(?:[\n\r]|,|\s)\s*(?:[,\-\s]*?(\d{4})(?:\s*[-–—]\s*(\d{4}))?)?/i;
+    const altMatch = text.match(altRegex);
+    if (altMatch) {
+      const shipName = altMatch[1].trim();
+      const startYear = altMatch[2] ? parseInt(altMatch[2], 10) : null;
+      const endYear = altMatch[3] ? parseInt(altMatch[3], 10) : null;
+      return { shipName, startYear, endYear };
+    }
+  }
+
+  // If we couldn't find the name in the text, fall back to the filename pattern
   const match = filename.match(/ms(\d+)/i);
   if (match) {
-    return `MS-${match[1]}`;
+    return { shipName: `MS-${match[1]}`, startYear: null, endYear: null };
   }
-  return filename.replace(/\.[^/.]+$/, '');
+
+  // Default fallback: strip extension and use filename
+  return { shipName: filename.replace(/\.[^/.]+$/, ''), startYear: null, endYear: null };
 }
 
 async function insertShip(ship: Ship): Promise<Ship> {
