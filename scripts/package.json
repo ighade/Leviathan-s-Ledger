@@ -1,0 +1,30 @@
+{
+  "name": "@leviathan/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "extract": "tsx extract-pdfs.ts",
+    "parse": "tsx parse-log-entries.ts",
+    "import": "tsx import-data.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --check \"**/*.{ts,tsx,js,json}\""
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "pdf-parse": "^1.1.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pdf-parse": "^1.1.3",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.0"
+  }
+}

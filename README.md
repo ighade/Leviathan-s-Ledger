@@ -8,11 +8,43 @@ Walvisvangst Scheepslogs Applicatie - Een interactieve database en visualisatie 
 
 Deze applicatie digitaleert en analyseert historische walvisvangst logboeken. Het biedt:
 
-- **PDF Extractie**: Automatische parsing van scheepslog PDF's
+- **AI-Powered PDF Extractie**: Intelligente parsing van scheepslog PDF's met OpenAI
 - **Database**: SQLite database met gestructureerde data
 - **REST API**: Express backend met uitgebreide endpoints
 - **Interactieve Frontend**: React applicatie met kaarten, grafieken en tijdlijnen
 - **Visualisaties**: Leaflet kaarten, Recharts grafieken, en meer
+
+## 🤖 AI-Gestuurde Data Extractie
+
+De applicatie gebruikt OpenAI GPT-4 om historische scheepslogs nauwkeurig te analyseren en structureren:
+
+### Waarom AI?
+
+Historische scheepslogs zijn vaak:
+- **Ongestructureerd**: Verschillende schrijfstijlen en formaten
+- **Moeilijk te parsen**: Geen consistente data formatting
+- **Historisch complex**: Datums uit 1800s-1900s, oude notaties
+- **Context-afhankelijk**: Scheepsnamen en details verstopt in tekst
+
+### Wat extraheert de AI?
+
+✅ **Scheepsnamen**: Echte scheepsnamen (niet document codes zoals "MS-220")  
+✅ **Historische Datums**: Correcte datums uit 1800s-1900s (niet 2024/2025!)  
+✅ **Coördinaten**: Nauwkeurige latitude/longitude van locaties  
+✅ **Walvis Waarnemingen**: Species, aantal, vangsten  
+✅ **Vangstgegevens**: Aantal walvissen, olie vaten, spek gewicht  
+✅ **Bemanning Events**: Ziekte, overlijden, ongelukken  
+✅ **Weer & Navigatie**: Weersomstandigheden, koers, wind  
+
+### Setup
+
+1. Verkrijg een OpenAI API key op https://platform.openai.com/api-keys
+2. Maak een `server/.env` bestand:
+   ```bash
+   OPENAI_API_KEY=jouw_api_key_hier
+   ```
+3. Run AI-extractie: `npm run extract-pdfs-ai`
+4. Importeer data: `npm run import-data-ai`
 
 ## 🛠️ Tech Stack
 
@@ -20,6 +52,7 @@ Deze applicatie digitaleert en analyseert historische walvisvangst logboeken. He
 - Node.js + TypeScript
 - Express.js
 - SQLite3
+- OpenAI GPT-4 voor AI-extractie
 - pdf-parse voor PDF extractie
 
 ### Frontend

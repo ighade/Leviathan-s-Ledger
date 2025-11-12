@@ -11,25 +11,54 @@ cd ../server && npm install
 cd ..
 ```
 
-## 2. PDF Data Extracten
+## 2. OpenAI API Key Setup (voor AI-extractie)
 
-De PDF's staan al in de `ship-logs/` folder, dus run:
+Voor de beste resultaten gebruiken we AI om de PDF's te analyseren:
 
+1. Ga naar https://platform.openai.com/api-keys
+2. Maak een API key aan
+3. Maak een `.env` bestand in de `server/` folder:
+
+```bash
+echo "OPENAI_API_KEY=jouw_api_key_hier" > server/.env
+```
+
+## 3. PDF Data Extracten met AI 🤖
+
+De PDF's worden met AI geanalyseerd voor accurate data-extractie:
+
+```bash
+npm run extract-pdfs-ai
+```
+
+✅ Dit maakt `extracted-data/` folder aan met gestructureerde JSON bestanden
+✅ Herkent correcte scheepsnamen (5 verschillende schepen)
+✅ Extraheert historische datums (1800s-1900s)
+✅ Parset coördinaten correct
+✅ Identificeert walvis waarnemingen, vangsten, en bemanning events
+
+**Optioneel**: Voor snelle basis-extractie zonder AI:
 ```bash
 npm run extract-pdfs
 ```
 
-✅ Dit maakt `extracted-data/` folder aan met JSON bestanden
+## 4. Database Vullen met AI-data
 
-## 3. Database Vullen
+```bash
+npm run import-data-ai
+```
 
+✅ Dit maakt `server/database/leviathan.db` aan met alle gestructureerde data
+✅ 5 verschillende schepen met unieke namen
+✅ Correcte historische datums (1800s-1900s)
+✅ Nauwkeurige coördinaten
+
+**Optioneel**: Voor import zonder AI-gestructureerde data:
 ```bash
 npm run import-data
 ```
 
-✅ Dit maakt `server/database/leviathan.db` aan met alle data
-
-## 4. Start de App
+## 5. Start de App
 
 ```bash
 npm run dev

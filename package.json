@@ -16,7 +16,9 @@
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
     "extract-pdfs": "cd server && npm run extract-pdfs",
-    "import-data": "cd server && npm run import-data"
+    "extract-pdfs-ai": "cd server && npm run extract-pdfs-ai",
+    "import-data": "cd server && npm run import-data",
+    "import-data-ai": "cd server && npm run import-data-ai"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
