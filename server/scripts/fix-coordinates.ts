@@ -1,13 +1,13 @@
-stauimport { query, run, closeDatabase } from '../src/db';
+import { query, run, closeDatabase } from "../src/db";
 
 /**
  * Script om coördinaten te corrigeren: E wordt W (positieve longitude wordt negatief)
  */
 async function fixCoordinates() {
   try {
-    console.log('🔧 Start corrigeren van coördinaten...\n');
+    console.log("🔧 Start corrigeren van coördinaten...\n");
 
-    console.log('📝 Corrigeren van log_entries (sign + anomaly fixes)...');
+    console.log("📝 Corrigeren van log_entries (sign + anomaly fixes)...");
     // First flip sign for positive longitudes (E->W correction)
     const logFlipResult = await run(
       `UPDATE log_entries 
@@ -30,7 +30,7 @@ async function fixCoordinates() {
     // Group by voyage_id (nulls kept together)
     const groups: Record<string, typeof rows> = {};
     for (const r of rows) {
-      const key = String(r.voyage_id ?? 'null');
+      const key = String(r.voyage_id ?? "null");
       if (!groups[key]) groups[key] = [];
       groups[key].push(r);
     }
@@ -44,7 +44,11 @@ async function fixCoordinates() {
         const mid = list[i];
         const next = list[i + 1];
         // --- Longitude anomaly detection and fixes ---
-        if (prev.longitude != null && mid.longitude != null && next.longitude != null) {
+        if (
+          prev.longitude != null &&
+          mid.longitude != null &&
+          next.longitude != null
+        ) {
           // Work in absolute degrees but preserve sign (W negative)
           const prevAbs = Math.abs(prev.longitude);
           const midAbs = Math.abs(mid.longitude);
@@ -58,12 +62,21 @@ async function fixCoordinates() {
           const distOriginal = Math.abs(midAbs - neighborAvg);
           const distPlus100 = Math.abs(midPlus100 - neighborAvg);
 
-          if (distPlus100 + 1e-6 < distOriginal && midAbs < 100 && neighborAvg >= 160) {
+          if (
+            distPlus100 + 1e-6 < distOriginal &&
+            midAbs < 100 &&
+            neighborAvg >= 160
+          ) {
             // apply correction: restore leading 1
-            const corrected = (midPlus100) * (mid.longitude < 0 ? -1 : 1);
-            await run('UPDATE log_entries SET longitude = ? WHERE id = ?', [corrected, mid.id]);
+            const corrected = midPlus100 * (mid.longitude < 0 ? -1 : 1);
+            await run("UPDATE log_entries SET longitude = ? WHERE id = ?", [
+              corrected,
+              mid.id,
+            ]);
             correctedLonCount++;
-            console.log(`    → Corrected leading-1 at id=${mid.id}: ${mid.longitude} -> ${corrected}`);
+            console.log(
+              `    → Corrected leading-1 at id=${mid.id}: ${mid.longitude} -> ${corrected}`
+            );
             // continue to next triplet after fixing longitude
             continue;
           }
@@ -72,11 +85,22 @@ async function fixCoordinates() {
           // Try midAbs - 60 and accept if it's closer to neighbors (typical misread of 1->7).
           const midMinus60 = midAbs - 60;
           const distMinus60 = Math.abs(midMinus60 - neighborAvg);
-          if (midAbs >= 60 && midAbs < 100 && neighborAvg >= 5 && neighborAvg <= 30 && distMinus60 + 1e-6 < distOriginal) {
-            const corrected = (midMinus60) * (mid.longitude < 0 ? -1 : 1);
-            await run('UPDATE log_entries SET longitude = ? WHERE id = ?', [corrected, mid.id]);
+          if (
+            midAbs >= 60 &&
+            midAbs < 100 &&
+            neighborAvg >= 5 &&
+            neighborAvg <= 30 &&
+            distMinus60 + 1e-6 < distOriginal
+          ) {
+            const corrected = midMinus60 * (mid.longitude < 0 ? -1 : 1);
+            await run("UPDATE log_entries SET longitude = ? WHERE id = ?", [
+              corrected,
+              mid.id,
+            ]);
             correctedLonCount++;
-            console.log(`    → Corrected false-7 at id=${mid.id}: ${mid.longitude} -> ${corrected}`);
+            console.log(
+              `    → Corrected false-7 at id=${mid.id}: ${mid.longitude} -> ${corrected}`
+            );
             continue;
           }
 
@@ -88,16 +112,25 @@ async function fixCoordinates() {
             // set mid to neighbors average
             const avg = neighborAvg;
             const corrected = avg * (prev.longitude < 0 ? -1 : 1); // use sign of neighbors (assume same)
-            await run('UPDATE log_entries SET longitude = ? WHERE id = ?', [corrected, mid.id]);
+            await run("UPDATE log_entries SET longitude = ? WHERE id = ?", [
+              corrected,
+              mid.id,
+            ]);
             correctedLonCount++;
-            console.log(`    → Smoothed longitude outlier at id=${mid.id}: ${mid.longitude} -> ${corrected}`);
+            console.log(
+              `    → Smoothed longitude outlier at id=${mid.id}: ${mid.longitude} -> ${corrected}`
+            );
             // continue to next triplet after fixing longitude
             continue;
           }
         }
 
         // --- Latitude anomaly detection and fixes (north/south) ---
-        if (prev.latitude != null && mid.latitude != null && next.latitude != null) {
+        if (
+          prev.latitude != null &&
+          mid.latitude != null &&
+          next.latitude != null
+        ) {
           const prevLatAbs = Math.abs(prev.latitude);
           const midLatAbs = Math.abs(mid.latitude);
           const nextLatAbs = Math.abs(next.latitude);
@@ -107,9 +140,14 @@ async function fixCoordinates() {
           // correct it by subtracting 60 without consulting neighbors.
           if (mid.latitude > 70) {
             const correctedLat = mid.latitude - 60;
-            await run('UPDATE log_entries SET latitude = ? WHERE id = ?', [correctedLat, mid.id]);
+            await run("UPDATE log_entries SET latitude = ? WHERE id = ?", [
+              correctedLat,
+              mid.id,
+            ]);
             correctedLatCount++;
-            console.log(`    → Forced false-7 N at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`);
+            console.log(
+              `    → Forced false-7 N at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`
+            );
             continue;
           }
 
@@ -121,9 +159,14 @@ async function fixCoordinates() {
           if (prevSign === nextSign && prevSign !== midSign && prevSign !== 0) {
             // neighbors have the same sign but middle differs -> flip middle's sign
             const correctedLat = -mid.latitude;
-            await run('UPDATE log_entries SET latitude = ? WHERE id = ?', [correctedLat, mid.id]);
+            await run("UPDATE log_entries SET latitude = ? WHERE id = ?", [
+              correctedLat,
+              mid.id,
+            ]);
             correctedLatCount++;
-            console.log(`    → Corrected hemisphere flip at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`);
+            console.log(
+              `    → Corrected hemisphere flip at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`
+            );
             continue;
           }
 
@@ -134,39 +177,61 @@ async function fixCoordinates() {
           const midLatMinus60 = midLatAbs - 60;
           const distLatOriginal = Math.abs(midLatAbs - neighborLatAvg);
           const distLatMinus60 = Math.abs(midLatMinus60 - neighborLatAvg);
-          if (midLatAbs >= 60 && midLatAbs < 100 && neighborLatAvg >= 5 && neighborLatAvg <= 30 && distLatMinus60 + 1e-6 < distLatOriginal) {
+          if (
+            midLatAbs >= 60 &&
+            midLatAbs < 100 &&
+            neighborLatAvg >= 5 &&
+            neighborLatAvg <= 30 &&
+            distLatMinus60 + 1e-6 < distLatOriginal
+          ) {
             const correctedLat = midLatMinus60 * (mid.latitude < 0 ? -1 : 1);
-            await run('UPDATE log_entries SET latitude = ? WHERE id = ?', [correctedLat, mid.id]);
+            await run("UPDATE log_entries SET latitude = ? WHERE id = ?", [
+              correctedLat,
+              mid.id,
+            ]);
             correctedLatCount++;
-            console.log(`    → Corrected false-7 latitude at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`);
+            console.log(
+              `    → Corrected false-7 latitude at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`
+            );
             continue;
           }
           if (neighborsLatClose && midLatDeviation > 5) {
             const avgLat = neighborLatAvg;
             const correctedLat = avgLat * (prev.latitude < 0 ? -1 : 1); // preserve N/S sign
-            await run('UPDATE log_entries SET latitude = ? WHERE id = ?', [correctedLat, mid.id]);
+            await run("UPDATE log_entries SET latitude = ? WHERE id = ?", [
+              correctedLat,
+              mid.id,
+            ]);
             correctedLatCount++;
-            console.log(`    → Smoothed latitude outlier at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`);
+            console.log(
+              `    → Smoothed latitude outlier at id=${mid.id}: ${mid.latitude} -> ${correctedLat}`
+            );
             continue;
           }
         }
       }
     }
 
-    console.log(`  ✓ ${correctedLonCount} log entries longitude anomaly-corrected`);
-    console.log(`  ✓ ${correctedLatCount} log entries latitude anomaly-corrected`);
+    console.log(
+      `  ✓ ${correctedLonCount} log entries longitude anomaly-corrected`
+    );
+    console.log(
+      `  ✓ ${correctedLatCount} log entries latitude anomaly-corrected`
+    );
 
     // Fix whale_sightings table
-    console.log('\n🐋 Corrigeren van whale_sightings...');
+    console.log("\n🐋 Corrigeren van whale_sightings...");
     const whaleSightingsResult = await run(
       `UPDATE whale_sightings 
        SET longitude = -longitude 
        WHERE longitude > 0 AND longitude IS NOT NULL`
     );
-    console.log(`  ✓ ${whaleSightingsResult.changes} whale sightings gecorrigeerd`);
+    console.log(
+      `  ✓ ${whaleSightingsResult.changes} whale sightings gecorrigeerd`
+    );
 
     // Show summary
-    console.log('\n📊 Samenvatting:');
+    console.log("\n📊 Samenvatting:");
     const logStats = await query<{ count: number; avg_lon: number }>(
       `SELECT COUNT(*) as count, AVG(longitude) as avg_lon 
        FROM log_entries 
@@ -179,13 +244,23 @@ async function fixCoordinates() {
     );
 
     console.log(`  Log entries met coördinaten: ${logStats[0]?.count || 0}`);
-    console.log(`  Gemiddelde longitude (log entries): ${logStats[0]?.avg_lon?.toFixed(2) || 'N/A'}`);
-    console.log(`  Whale sightings met coördinaten: ${whaleStats[0]?.count || 0}`);
-    console.log(`  Gemiddelde longitude (whale sightings): ${whaleStats[0]?.avg_lon?.toFixed(2) || 'N/A'}`);
+    console.log(
+      `  Gemiddelde longitude (log entries): ${
+        logStats[0]?.avg_lon?.toFixed(2) || "N/A"
+      }`
+    );
+    console.log(
+      `  Whale sightings met coördinaten: ${whaleStats[0]?.count || 0}`
+    );
+    console.log(
+      `  Gemiddelde longitude (whale sightings): ${
+        whaleStats[0]?.avg_lon?.toFixed(2) || "N/A"
+      }`
+    );
 
-    console.log('\n✅ Correctie voltooid!');
+    console.log("\n✅ Correctie voltooid!");
   } catch (error) {
-    console.error('❌ Fout bij corrigeren:', error);
+    console.error("❌ Fout bij corrigeren:", error);
     throw error;
   } finally {
     await closeDatabase();
@@ -196,14 +271,13 @@ async function fixCoordinates() {
 if (require.main === module) {
   fixCoordinates()
     .then(() => {
-      console.log('\n✨ Script succesvol afgerond');
+      console.log("\n✨ Script succesvol afgerond");
       process.exit(0);
     })
     .catch((error) => {
-      console.error('\n💥 Script mislukt:', error);
+      console.error("\n💥 Script mislukt:", error);
       process.exit(1);
     });
 }
 
 export { fixCoordinates };
-

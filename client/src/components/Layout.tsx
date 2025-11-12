@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Ship, Map, Calendar, FileText, BarChart3, Moon, Sun } from 'lucide-react';
-import { ReactNode } from 'react';
+import { Link, useLocation } from "react-router-dom";
+import { Ship, Map, BarChart3, Moon, Sun } from "lucide-react";
+import { ReactNode } from "react";
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,17 +8,18 @@ interface LayoutProps {
   toggleDarkMode: () => void;
 }
 
-export default function Layout({ children, darkMode, toggleDarkMode }: LayoutProps) {
+export default function Layout({
+  children,
+  darkMode,
+  toggleDarkMode,
+}: LayoutProps) {
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
 
   const navLinks = [
-    { path: '/', icon: BarChart3, label: 'Dashboard' },
-    { path: '/map', icon: Map, label: 'Kaart' },
-    { path: '/timeline', icon: Calendar, label: 'Tijdlijn' },
-    { path: '/log-entries', icon: FileText, label: 'Logboeken' },
-    { path: '/statistics', icon: BarChart3, label: 'Statistieken' },
+    { path: "/", icon: Map, label: "Kaart" },
+    { path: "/statistics", icon: BarChart3, label: "Statistieken" },
   ];
 
   return (
@@ -27,14 +28,18 @@ export default function Layout({ children, darkMode, toggleDarkMode }: LayoutPro
       <header className="border-b border-border bg-card">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/map" className="flex items-center space-x-3">
               <Ship className="h-8 w-8 text-primary" />
               <div>
-                <h1 className="text-2xl font-bold text-foreground">Leviathan's Ledger</h1>
-                <p className="text-sm text-muted-foreground">Walvisvangst Scheepslogs</p>
+                <h1 className="text-2xl font-bold text-foreground">
+                  Leviathan's Ledger
+                </h1>
+                <p className="text-sm text-muted-foreground">
+                  Walvisvangst Scheepslogs
+                </p>
               </div>
             </Link>
-            
+
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-lg hover:bg-accent transition-colors"
@@ -60,8 +65,8 @@ export default function Layout({ children, darkMode, toggleDarkMode }: LayoutPro
                   to={path}
                   className={`flex items-center space-x-2 px-4 py-3 border-b-2 transition-colors ${
                     isActive(path)
-                      ? 'border-primary text-primary'
-                      : 'border-transparent text-muted-foreground hover:text-foreground hover:border-border'
+                      ? "border-primary text-primary"
+                      : "border-transparent text-muted-foreground hover:text-foreground hover:border-border"
                   }`}
                 >
                   <Icon className="h-4 w-4" />
@@ -74,9 +79,7 @@ export default function Layout({ children, darkMode, toggleDarkMode }: LayoutPro
       </nav>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
-        {children}
-      </main>
+      <main className="container mx-auto px-4 py-8">{children}</main>
 
       {/* Footer */}
       <footer className="border-t border-border bg-card mt-16">
@@ -89,4 +92,3 @@ export default function Layout({ children, darkMode, toggleDarkMode }: LayoutPro
     </div>
   );
 }
-

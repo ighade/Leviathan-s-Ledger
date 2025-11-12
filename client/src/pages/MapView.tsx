@@ -27,8 +27,6 @@ import { formatDate, formatCoordinates } from "../lib/utils";
 import {
   Ship,
   Route,
-  Wind,
-  Thermometer,
   Calendar,
   X,
   Maximize2,
@@ -161,8 +159,6 @@ export default function MapView() {
     const route = routeData.route;
     let totalDistance = 0;
     const speeds: number[] = [];
-    const weatherConditions: Record<string, number> = {};
-    const temperatures: number[] = [];
 
     for (let i = 1; i < route.length; i++) {
       const prev = route[i - 1];
@@ -190,34 +186,14 @@ export default function MapView() {
           speeds.push(speed);
         }
       }
-
-      if (curr.weather) {
-        weatherConditions[curr.weather] =
-          (weatherConditions[curr.weather] || 0) + 1;
-      }
-
-      if (curr.temperature !== null && curr.temperature !== undefined) {
-        temperatures.push(curr.temperature);
-      }
     }
 
     const avgSpeed =
       speeds.length > 0 ? speeds.reduce((a, b) => a + b, 0) / speeds.length : 0;
 
-    const avgTemp =
-      temperatures.length > 0
-        ? temperatures.reduce((a, b) => a + b, 0) / temperatures.length
-        : null;
-
-    const mostCommonWeather =
-      Object.entries(weatherConditions).sort((a, b) => b[1] - a[1])[0]?.[0] ||
-      null;
-
     return {
       totalDistance: Math.round(totalDistance),
       avgSpeed: Math.round(avgSpeed * 10) / 10,
-      avgTemp: avgTemp ? Math.round(avgTemp * 10) / 10 : null,
-      mostCommonWeather,
       routePoints: route.length,
       whaleSightings: routeData.whaleSightings.length,
       catches: routeData.whaleSightings.filter((w) => w.caught).length,
@@ -324,32 +300,6 @@ export default function MapView() {
               <p className="text-xl font-bold">{routeStats.avgSpeed} km/dag</p>
             </CardContent>
           </Card>
-
-          {routeStats.avgTemp !== null && (
-            <Card>
-              <CardContent className="p-3">
-                <div className="flex items-center gap-2 mb-1">
-                  <Thermometer className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-xs text-muted-foreground">Temp.</span>
-                </div>
-                <p className="text-xl font-bold">{routeStats.avgTemp}°C</p>
-              </CardContent>
-            </Card>
-          )}
-
-          {routeStats.mostCommonWeather && (
-            <Card>
-              <CardContent className="p-3">
-                <div className="flex items-center gap-2 mb-1">
-                  <Wind className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-xs text-muted-foreground">Weer</span>
-                </div>
-                <p className="text-base font-semibold">
-                  {routeStats.mostCommonWeather}
-                </p>
-              </CardContent>
-            </Card>
-          )}
         </div>
       )}
 
@@ -687,34 +637,6 @@ export default function MapView() {
                               {routeStats.avgSpeed} km/dag
                             </span>
                           </div>
-
-                          {routeStats.avgTemp !== null && (
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2">
-                                <Thermometer className="h-4 w-4 text-muted-foreground" />
-                                <span className="text-sm text-muted-foreground">
-                                  Temp
-                                </span>
-                              </div>
-                              <span className="font-bold">
-                                {routeStats.avgTemp}°C
-                              </span>
-                            </div>
-                          )}
-
-                          {routeStats.mostCommonWeather && (
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2">
-                                <Wind className="h-4 w-4 text-muted-foreground" />
-                                <span className="text-sm text-muted-foreground">
-                                  Weer
-                                </span>
-                              </div>
-                              <span className="font-semibold text-sm">
-                                {routeStats.mostCommonWeather}
-                              </span>
-                            </div>
-                          )}
                         </CardContent>
                       )}
                     </Card>
